@@ -1,0 +1,13 @@
+.services {
+  padding: 3rem 2rem;
+  background: #fff;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+mat-card {
+  min-height: 220px;
+}

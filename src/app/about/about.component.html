@@ -1,0 +1,277 @@
+<!-- Hero Section with 3D Elements -->
+<section class="hero-3d-about">
+  <div class="floating-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  
+  <div class="container mx-auto px-6">
+    <div class="hero-content-3d">
+      <!-- 3D Badge -->
+      <div class="hero-badge-3d">
+        <div class="badge-inner transform-style-preserve-3d">
+          <div class="badge-face">
+            <mat-icon class="text-2xl">account_balance</mat-icon>
+            <span>TRUSTED LEGAL EXPERTS</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D Title -->
+      <h1 class="hero-title-3d">
+        <span class="title-word">About</span>
+        <span class="title-word">KarzaMaaf</span>
+      </h1>
+      
+      <!-- 3D Subtitle -->
+      <p class="hero-subtitle-3d">
+        Your trusted partner in navigating the complexities of debt settlement and achieving 
+        <span class="gradient-text-3d">financial freedom</span> through expert legal guidance.
+      </p>
+      
+      <!-- 3D Action Buttons -->
+      <div class="hero-actions-3d">
+        <button (click)="onContactUs()" class="btn-3d-primary">
+          <div class="btn-3d-inner transform-style-preserve-3d">
+            <div class="btn-face btn-top"></div>
+            <div class="btn-face btn-front">
+              <mat-icon>contact_support</mat-icon>
+              <span>Contact Our Experts</span>
+            </div>
+            <div class="btn-face btn-right"></div>
+            <div class="btn-face btn-bottom"></div>
+          </div>
+        </button>
+        
+        <button (click)="onViewServices()" class="btn-3d-secondary">
+          <div class="btn-3d-inner transform-style-preserve-3d">
+            <div class="btn-face btn-top"></div>
+            <div class="btn-face btn-front">
+              <mat-icon>business_center</mat-icon>
+              <span>View Our Services</span>
+            </div>
+            <div class="btn-face btn-right"></div>
+            <div class="btn-face btn-bottom"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Stats Section -->
+<section class="stats-3d-section" #statsCounter>
+  <div class="container mx-auto px-6">
+    <div class="stats-container-3d">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="stat-card-3d" *ngFor="let achievement of achievements; let i = index">
+          <div class="stat-inner transform-style-preserve-3d">
+            <div class="stat-face stat-front">
+              <mat-icon class="stat-icon-3d" [ngClass]="achievement.color">
+                {{ achievement.icon }}
+              </mat-icon>
+              <div class="stat-value-3d">{{ achievement.value }}</div>
+              <div class="stat-label-3d">{{ achievement.title }}</div>
+            </div>
+            <div class="stat-face stat-back">
+              <div class="stat-description-3d">{{ achievement.description }}</div>
+              <mat-icon class="stat-icon-3d" [ngClass]="achievement.color">
+                {{ achievement.icon }}
+              </mat-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Story Section -->
+<section class="story-3d-section">
+  <div class="container mx-auto px-6">
+    <div class="story-container-3d">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Story Image -->
+        <div class="story-image-3d lg:order-2">
+          <div class="image-container">
+            <img 
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=400&fit=crop" 
+              alt="Our Story" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+        </div>
+        
+        <!-- Story Content -->
+        <div class="story-text-3d lg:order-1">
+          <h2 class="story-title-3d">Our Journey to Justice</h2>
+          
+          <p class="story-paragraph-3d">
+            Founded with a vision to empower individuals burdened by overwhelming debt, KarzaMaaf began its 
+            journey by recognizing a critical need for ethical and effective legal solutions in the debt 
+            settlement landscape. We saw firsthand the distress caused by aggressive collection practices 
+            and the lack of clear pathways to financial recovery.
+          </p>
+          
+          <p class="story-paragraph-3d">
+            Since our inception, we have dedicated ourselves to advocating for our clients' rights, providing 
+            transparent guidance, and negotiating tirelessly on their behalf. Our commitment extends beyond 
+            just settling debts; we strive to restore peace of mind and help our clients build a foundation 
+            for a secure financial future.
+          </p>
+          
+          <p class="story-paragraph-3d">
+            With over {{ currentYear - 2009 }} years of combined experience, our team has successfully resolved 
+            thousands of debt cases, helping families regain their financial stability and dignity. We believe 
+            everyone deserves a second chance, and we're here to make that possible.
+          </p>
+          
+          <div class="mt-8">
+            <button (click)="onLearnMore()" class="btn-3d-primary">
+              <div class="btn-3d-inner transform-style-preserve-3d">
+                <div class="btn-face btn-top"></div>
+                <div class="btn-face btn-front">
+                  <mat-icon>info</mat-icon>
+                  <span>Learn More</span>
+                </div>
+                <div class="btn-face btn-right"></div>
+                <div class="btn-face btn-bottom"></div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Core Values Section -->
+<section class="values-3d-section">
+  <div class="container mx-auto px-6">
+    <div class="values-header-3d">
+      <h2 class="values-title-3d">
+        Our <span class="title-highlight">Core Values</span>
+      </h2>
+      <p class="values-subtitle-3d">
+        The principles that guide every decision and action we take
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="value-card-3d" *ngFor="let value of coreValues; let i = index">
+        <div class="value-inner transform-style-preserve-3d">
+          <div class="value-face value-front">
+            <div class="value-icon-3d" [ngClass]="value.color">
+              <mat-icon>{{ value.icon }}</mat-icon>
+            </div>
+            <h3 class="value-title-3d">{{ value.title }}</h3>
+            <p class="value-description-3d">{{ value.description }}</p>
+          </div>
+          <div class="value-face value-back">
+            <div class="value-details-3d">
+              <h3 class="value-title-3d">{{ value.title }}</h3>
+              <div class="detail-item" *ngFor="let detail of value.details">
+                <mat-icon>check_circle</mat-icon>
+                <span>{{ detail }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Team Section -->
+<section class="team-3d-section">
+  <div class="container mx-auto px-6">
+    <div class="team-header-3d">
+      <h2 class="team-title-3d">Meet Our Expert Team</h2>
+      <p class="team-subtitle-3d">
+        Dedicated professionals committed to your financial freedom
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="team-member-3d" *ngFor="let member of teamMembers; let i = index">
+        <div class="member-inner transform-style-preserve-3d">
+          <div class="member-face member-front">
+            <div class="member-image-container">
+              <img [src]="member.image" [alt]="member.name">
+              <div class="member-overlay"></div>
+              <div class="member-experience">{{ member.experience }}</div>
+            </div>
+            <div class="member-content">
+              <h3 class="member-name-3d">{{ member.name }}</h3>
+              <p class="member-position-3d">{{ member.position }}</p>
+              <p class="member-description-3d">{{ member.description }}</p>
+              <div class="member-specialties-3d">
+                <span class="specialty-item" *ngFor="let specialty of member.specialties">
+                  {{ specialty }}
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="member-face member-back">
+            <div class="member-back-content">
+              <h3 class="member-name-3d">{{ member.name }}</h3>
+              <div class="back-specialties">
+                <div class="specialty-item-back" *ngFor="let specialty of member.specialties">
+                  <mat-icon>star</mat-icon>
+                  <span>{{ specialty }}</span>
+                </div>
+              </div>
+              <p class="member-description-3d">
+                {{ member.description }} With {{ member.experience }} of experience, 
+                they bring unmatched expertise to every case.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Call to Action Section -->
+<section class="cta-3d-section">
+  <div class="container mx-auto px-6">
+    <div class="cta-content-3d">
+      <h2 class="cta-title-3d">Ready to Regain Your Financial Freedom?</h2>
+      <p class="cta-subtitle-3d">
+        Don't let debt control your life. Contact KarzaMaaf today for a free, confidential 
+        consultation and take the first step towards a brighter financial future.
+      </p>
+      
+      <div class="cta-actions-3d">
+        <a routerLink="/contact" class="btn-3d-primary">
+          <div class="btn-3d-inner transform-style-preserve-3d">
+            <div class="btn-face btn-top"></div>
+            <div class="btn-face btn-front">
+              <mat-icon>phone</mat-icon>
+              <span>Get Your Free Consultation</span>
+            </div>
+            <div class="btn-face btn-right"></div>
+            <div class="btn-face btn-bottom"></div>
+          </div>
+        </a>
+        
+        <a routerLink="/services" class="btn-3d-secondary">
+          <div class="btn-3d-inner transform-style-preserve-3d">
+            <div class="btn-face btn-top"></div>
+            <div class="btn-face btn-front">
+              <mat-icon>explore</mat-icon>
+              <span>Explore Our Services</span>
+            </div>
+            <div class="btn-face btn-right"></div>
+            <div class="btn-face btn-bottom"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,492 @@
+<!-- Hero Section with 3D Legal Elements -->
+<section class="hero-3d relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Dynamic Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <div class="absolute inset-0 opacity-10 bg-pattern"></div>
+    
+    <!-- Floating 3D Legal Elements -->
+    <div class="floating-legal">
+      <div class="legal-scales scales-1"></div>
+      <div class="legal-scales scales-2"></div>
+      <div class="legal-gavel gavel-1"></div>
+      <div class="legal-gavel gavel-2"></div>
+      <div class="legal-shield shield-1"></div>
+      <div class="legal-shield shield-2"></div>
+      <div class="justice-book book-1"></div>
+      <div class="justice-book book-2"></div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Left Column - 3D Content -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        <!-- 3D Badge -->
+        <div class="mb-8 perspective-1000">
+          <div class="badge-3d transform-style-preserve-3d animate-float">
+            <div class="badge-face badge-front">
+              <mat-icon class="text-amber-400 animate-pulse">balance</mat-icon>
+              <span class="font-bold text-white">LEGAL EXPERTS</span>
+            </div>
+            <div class="badge-face badge-back">
+              <mat-icon class="text-green-400">verified</mat-icon>
+              <span class="font-bold text-white">JUSTICE SERVED</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 3D Headline -->
+        <h1 class="text-4xl md:text-7xl font-black leading-tight mb-8 perspective-1000 font-serif">
+          <div class="headline-3d transform-style-preserve-3d">
+            <span class="headline-text text-white drop-shadow-2xl">
+              ANTI-HARASSMENT
+            </span>
+            <span class="headline-shadow"></span>
+          </div>
+          <div class="headline-3d transform-style-preserve-3d" style="animation-delay: 0.2s">
+            <span class="headline-text gradient-text-3d drop-shadow-2xl">
+              LEGAL SERVICES
+            </span>
+            <span class="headline-shadow-gradient"></span>
+          </div>
+        </h1>
+        
+        <!-- Animated Subtitle -->
+        <p class="text-xl md:text-2xl text-gray-200 mb-8 animate-fade-slide-up font-light" style="animation-delay: 0.8s">
+          Expert legal solutions to protect you against <span class="text-highlight">workplace harassment</span> • 
+          <span class="text-highlight">cyber bullying</span> • 
+          <span class="text-highlight">discrimination</span>
+        </p>
+        
+        <!-- 3D Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 mb-8" style="animation-delay: 1s">
+          <button (click)="onGetLegalHelp()" class="btn-3d-primary group perspective-1000">
+            <div class="btn-3d-body transform-style-preserve-3d">
+              <div class="btn-face btn-top">
+                <mat-icon class="mr-2">support_agent</mat-icon>
+                GET LEGAL HELP
+              </div>
+              <div class="btn-face btn-front">
+                <mat-icon class="mr-2">support_agent</mat-icon>
+                GET LEGAL HELP
+              </div>
+              <div class="btn-face btn-right"></div>
+              <div class="btn-face btn-bottom"></div>
+            </div>
+          </button>
+          
+          <button (click)="onContactAdvocates()" class="btn-3d-secondary group perspective-1000">
+            <div class="btn-3d-body transform-style-preserve-3d">
+              <div class="btn-face btn-top-secondary">
+                <mat-icon class="mr-2">gavel</mat-icon>
+                CONTACT OUR ADVOCATES
+              </div>
+              <div class="btn-face btn-front-secondary">
+                <mat-icon class="mr-2">gavel</mat-icon>
+                CONTACT OUR ADVOCATES
+              </div>
+              <div class="btn-face btn-right-secondary"></div>
+              <div class="btn-face btn-bottom-secondary"></div>
+            </div>
+          </button>
+        </div>
+
+        <!-- 3D Stats Row -->
+        <div class="grid grid-cols-4 gap-4 animate-fade-slide-up" style="animation-delay: 1.2s">
+          <div class="stat-3d-mini" *ngFor="let stat of stats">
+            <div class="stat-3d-content">
+              <div class="stat-number-3d">{{ stat.value }}</div>
+              <div class="stat-label-3d">{{ stat.label }}</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Harassment Types Ticker -->
+        <div class="harassment-ticker animate-fade-slide-up mt-8" style="animation-delay: 1.4s">
+          <div class="ticker-label">WE FIGHT:</div>
+          <div class="ticker-content">
+            <div class="ticker-scroll">
+              <span *ngFor="let type of harassmentTypes" class="ticker-item">{{ type }}</span>
+              <span *ngFor="let type of harassmentTypes" class="ticker-item">{{ type }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - 3D Legal Dashboard -->
+      <div class="lg:col-span-5 animate-fade-slide-up" style="animation-delay: 1.6s">
+        <div class="legal-dashboard-3d perspective-1000">
+          <div class="dashboard-container transform-style-preserve-3d">
+            
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+              <div class="status-indicator">
+                <div class="status-dot animate-pulse"></div>
+                <span class="status-text">LEGAL PROTECTION ACTIVE</span>
+              </div>
+              <div class="dashboard-title">Justice Monitor</div>
+            </div>
+
+            <!-- Legal Protection Metrics -->
+            <div class="protection-metrics">
+              <div class="metric-card metric-1">
+                <div class="metric-icon">
+                  <mat-icon>shield</mat-icon>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value">Protected</div>
+                  <div class="metric-label">Legal Standing</div>
+                </div>
+                <div class="metric-progress">
+                  <div class="progress-bar progress-full"></div>
+                </div>
+              </div>
+
+              <div class="metric-card metric-2">
+                <div class="metric-icon">
+                  <mat-icon>balance</mat-icon>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value">Active</div>
+                  <div class="metric-label">Case Monitoring</div>
+                </div>
+                <div class="metric-progress">
+                  <div class="progress-bar progress-ready"></div>
+                </div>
+              </div>
+
+              <div class="metric-card metric-3">
+                <div class="metric-icon">
+                  <mat-icon>security</mat-icon>
+                </div>
+                <div class="metric-content">
+                  <div class="metric-value">Secured</div>
+                  <div class="metric-label">Rights Defense</div>
+                </div>
+                <div class="metric-progress">
+                  <div class="progress-bar progress-secured"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Legal Activity -->
+            <div class="activity-feed">
+              <div class="activity-header">Recent Legal Updates</div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-dot success"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">Case documentation completed</div>
+                    <div class="activity-time">2 hours ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot warning"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">Legal notice served to offender</div>
+                    <div class="activity-time">1 day ago</div>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot info"></div>
+                  <div class="activity-content">
+                    <div class="activity-text">Court hearing scheduled</div>
+                    <div class="activity-time">3 days ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Legal Actions -->
+            <div class="quick-actions">
+              <button class="action-btn action-primary">
+                <mat-icon>description</mat-icon>
+                <span>Legal Consultation</span>
+              </button>
+              <button class="action-btn action-secondary">
+                <mat-icon>phone</mat-icon>
+                <span>Emergency Support</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Legal Services Section -->
+<section class="py-32 bg-gradient-to-br from-gray-900 to-slate-900 relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0">
+    <div class="legal-particles"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6 font-serif">
+        <span class="text-white">Comprehensive</span>
+        <span class="gradient-text-3d block">LEGAL PROTECTION</span>
+        <span class="text-white">Services</span>
+      </h2>
+      <p class="text-2xl text-gray-300 max-w-4xl mx-auto font-light">
+        Expert legal representation and advocacy for all forms of harassment cases
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Legal Service Card -->
+      <div class="service-card-3d group perspective-1000" *ngFor="let service of legalServices; let i = index">
+        <div class="service-inner transform-style-preserve-3d" [style.animation-delay]="(i * 0.2) + 's'">
+          <!-- Front -->
+          <div class="service-face service-front">
+            <div class="service-icon-3d" [ngClass]="'icon-' + service.color">
+              <div class="icon-pyramid">
+                <div class="pyramid-face pyramid-front">
+                  <mat-icon>{{ service.icon }}</mat-icon>
+                </div>
+                <div class="pyramid-face pyramid-back"></div>
+                <div class="pyramid-face pyramid-right"></div>
+                <div class="pyramid-face pyramid-left"></div>
+                <div class="pyramid-face pyramid-bottom"></div>
+              </div>
+            </div>
+            
+            <h3 class="service-title-3d">{{ service.title }}</h3>
+            <p class="service-desc-3d">{{ service.description }}</p>
+            
+            <div class="service-learn-more">
+              <span>Hover to Learn More</span>
+              <mat-icon>info</mat-icon>
+            </div>
+          </div>
+          
+          <!-- Back -->
+          <div class="service-face service-back">
+            <div class="service-back-content">
+              <div class="back-header">
+                <mat-icon class="back-icon">{{ service.icon }}</mat-icon>
+                <h4 class="back-title">{{ service.title }}</h4>
+              </div>
+              
+              <div class="back-highlights">
+                <div class="highlight-item" *ngFor="let highlight of service.highlights">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>{{ highlight }}</span>
+                </div>
+              </div>
+              
+              <button class="learn-more-btn">
+                <mat-icon>gavel</mat-icon>
+                <span>Get Legal Help</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Blog Section -->
+<section class="py-32 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+  <!-- Legal Pattern Background -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="legal-pattern-bg"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6 text-slate-900 font-serif">
+        <span class="gradient-text-3d">LEGAL INSIGHTS</span>
+        <span class="text-slate-900 block">& Expert Guidance</span>
+      </h2>
+      <p class="text-2xl text-slate-600 max-w-4xl mx-auto font-light">
+        Stay informed with the latest legal developments and expert advice on harassment law
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Blog Card -->
+      <article class="blog-card-3d group perspective-1000" *ngFor="let post of blogPosts; let i = index">
+        <div class="blog-inner transform-style-preserve-3d" [style.animation-delay]="(i * 0.2) + 's'">
+          <!-- Front -->
+          <div class="blog-face blog-front">
+            <div class="blog-image-container">
+              <img [src]="post.image" [alt]="post.title" class="blog-image">
+              <div class="blog-overlay"></div>
+              <div class="blog-category">{{ post.category }}</div>
+              <div class="blog-author">{{ post.author }}</div>
+            </div>
+            
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date">{{ post.publishDate }}</span>
+                <span class="blog-read-time">{{ post.readTime }}</span>
+              </div>
+              
+              <h3 class="blog-title">{{ post.title }}</h3>
+              <p class="blog-description">{{ post.description }}</p>
+              
+              <button class="blog-btn-3d" (click)="onReadMore(post.id)">
+                <span class="btn-text">Read More</span>
+                <mat-icon class="btn-icon">arrow_forward</mat-icon>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Back -->
+          <div class="blog-face blog-back">
+            <div class="blog-back-content">
+              <div class="back-header">
+                <mat-icon class="back-icon">article</mat-icon>
+                <h4 class="back-title">Legal Article</h4>
+              </div>
+              
+              <div class="back-highlights">
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Expert Legal Analysis</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Practical Guidance</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Case Studies</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Legal Updates</span>
+                </div>
+              </div>
+              
+              <button class="read-full-btn" (click)="onReadMore(post.id)">
+                <mat-icon>visibility</mat-icon>
+                <span>Read Full Article</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3D CTA Section -->
+<section class="py-32 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <!-- Animated legal symbols -->
+    <div class="legal-symbol-rain"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- 3D Justice Badge -->
+      <div class="justice-badge-3d perspective-1000 mb-8">
+        <div class="justice-inner transform-style-preserve-3d animate-float">
+          <div class="justice-face justice-front">
+            <mat-icon class="text-red-400 animate-pulse text-4xl">report</mat-icon>
+            <span class="text-red-300 font-black text-xl">FACING HARASSMENT?</span>
+          </div>
+          <div class="justice-face justice-back">
+            <mat-icon class="text-amber-400 text-4xl">balance</mat-icon>
+            <span class="text-amber-300 font-black text-xl">WE'LL FIGHT FOR YOU!</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D Main Headline -->
+      <h2 class="text-5xl md:text-8xl font-black text-white mb-8 perspective-1000 font-serif">
+        <div class="cta-headline transform-style-preserve-3d">
+          <span class="headline-text">DON'T SUFFER</span>
+          <span class="headline-shadow"></span>
+        </div>
+        <div class="cta-headline transform-style-preserve-3d" style="animation-delay: 0.2s">
+          <span class="headline-text gradient-text-3d">IN SILENCE</span>
+          <span class="headline-shadow-gradient"></span>
+        </div>
+      </h2>
+      
+      <p class="text-2xl md:text-3xl text-gray-200 mb-12 leading-relaxed font-light">
+        Every moment of harassment is a <span class="text-red-400 font-bold">VIOLATION OF YOUR RIGHTS</span><br>
+        Take legal action <span class="text-amber-400 font-bold">TODAY</span>
+      </p>
+      
+      <!-- 3D Action Center -->
+      <div class="action-center-3d perspective-1000 mb-12">
+        <div class="action-inner transform-style-preserve-3d">
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <!-- Primary CTA Button -->
+            <button (click)="onGetLegalHelp()" class="legal-primary-btn-3d group">
+              <div class="legal-primary-inner transform-style-preserve-3d">
+                <div class="btn-face legal-primary-front">
+                  <mat-icon class="mr-2 text-2xl">gavel</mat-icon>
+                  <span class="font-black">FREE LEGAL CONSULTATION</span>
+                </div>
+                <div class="btn-face legal-primary-top"></div>
+                <div class="btn-face legal-primary-right"></div>
+                <div class="btn-face legal-primary-bottom"></div>
+              </div>
+            </button>
+            
+            <!-- Secondary CTA Button -->
+            <a href="tel:+1234567890" class="legal-secondary-btn-3d group">
+              <div class="legal-secondary-inner transform-style-preserve-3d">
+                <div class="btn-face legal-secondary-front">
+                  <mat-icon class="mr-2 text-2xl animate-pulse">phone</mat-icon>
+                  <span class="font-black">CALL NOW: (123) 456-7890</span>
+                </div>
+                <div class="btn-face legal-secondary-top"></div>
+                <div class="btn-face legal-secondary-right"></div>
+                <div class="btn-face legal-secondary-bottom"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Trust Badges 3D -->
+      <div class="trust-badges-3d">
+        <div class="badge-3d-item">
+          <mat-icon class="text-amber-400">verified</mat-icon>
+          <span>Licensed Advocates</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon class="text-green-400">security</mat-icon>
+          <span>Confidential Consultation</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon class="text-blue-400">balance</mat-icon>
+          <span>24/7 Legal Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Anti-Harassment Legal Services Section -->
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold text-center mb-8">Anti-Harassment Legal Services</h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-xl font-semibold mb-4">Workplace Harassment</h2>
+      <p class="text-gray-600">Legal protection against workplace harassment and discrimination.</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-xl font-semibold mb-4">Cyber Harassment</h2>
+      <p class="text-gray-600">Defense against online harassment and cyberbullying.</p>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h2 class="text-xl font-semibold mb-4">Legal Advocacy</h2>
+      <p class="text-gray-600">Expert legal representation in harassment cases.</p>
+    </div>
+  </div>
+</div>

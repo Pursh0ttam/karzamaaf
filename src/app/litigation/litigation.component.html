@@ -1,0 +1,564 @@
+<!-- Hero Section with 3D Legal Elements -->
+<section class="hero-3d relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
+  
+  <!-- Dynamic Background Pattern -->
+  <div class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;utf8,<svg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'><circle cx=\'30\' cy=\'30\' r=\'5\' fill=\'%23fff\' fill-opacity=\'0.02\'/></svg>')]"></div>
+
+  <!-- Floating 3D Justice Elements -->
+  <div class="floating-justice">
+    <div class="justice-scale scale-1"></div>
+    <div class="justice-scale scale-2"></div>
+    <div class="justice-gavel gavel-1"></div>
+    <div class="justice-gavel gavel-2"></div>
+    <div class="legal-book book-1"></div>
+    <div class="legal-book book-2"></div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+      <!-- Left Column -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        
+        <!-- 3D Badge -->
+        <div class="mb-8">
+          <div class="badge-3d">
+            <span class="text-red-400 font-bold">⚠ LAWSUIT ALERT</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl md:text-6xl font-black leading-tight mb-8 text-white">
+          CRUSH DEBT <span class="text-gradient">LAWSUITS</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-xl md:text-2xl text-gray-200 mb-8">
+          <span class="font-bold">95% Success Rate</span> • 
+          <span class="font-bold">₹500M+ Saved</span> • 
+          <span class="font-bold">24/7 Defense</span>
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 mb-8">
+          <a href="/contact" class="btn-primary">GET INSTANT PROTECTION</a>
+          <a href="tel:+1234567890" class="btn-secondary">EMERGENCY HOTLINE</a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-4 text-white">
+          <div>
+            <div class="text-2xl font-bold">1000+</div>
+            <div class="text-gray-300">Cases Won</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold">₹500M+</div>
+            <div class="text-gray-300">Debt Saved</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold">24/7</div>
+            <div class="text-gray-300">Support</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Legal Dashboard) -->
+      <div class="lg:col-span-5">
+        <div class="legal-dashboard bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 shadow-2xl">
+          <h3 class="text-white text-xl mb-4">Defense Status</h3>
+          
+          <div class="space-y-4">
+            <div class="metric bg-white bg-opacity-20 p-4 rounded-lg">
+              <div class="text-white font-bold">Protected: 100%</div>
+              <div class="h-2 bg-white bg-opacity-40 rounded-full mt-2">
+                <div class="h-2 bg-green-400 rounded-full" style="width:100%"></div>
+              </div>
+            </div>
+
+            <div class="metric bg-white bg-opacity-20 p-4 rounded-lg">
+              <div class="text-white font-bold">Court Defense: Ready</div>
+              <div class="h-2 bg-white bg-opacity-40 rounded-full mt-2">
+                <div class="h-2 bg-yellow-400 rounded-full" style="width:80%"></div>
+              </div>
+            </div>
+
+            <div class="metric bg-white bg-opacity-20 p-4 rounded-lg">
+              <div class="text-white font-bold">Assets: Secured</div>
+              <div class="h-2 bg-white bg-opacity-40 rounded-full mt-2">
+                <div class="h-2 bg-blue-400 rounded-full" style="width:70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.text-gradient {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 14px 24px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: white;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid white;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  transform: translateY(-3px);
+}
+
+/* Floating Elements Animation */
+.floating-justice div {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.scale-1 { top: 10%; left: 10%; }
+.scale-2 { bottom: 20%; right: 15%; }
+.gavel-1 { top: 30%; right: 10%; }
+.gavel-2 { bottom: 25%; left: 20%; }
+.book-1 { top: 15%; left: 40%; }
+.book-2 { bottom: 10%; right: 30%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+</style>
+
+
+<!-- 3D Services Showcase -->
+<section class="py-32 bg-gradient-to-br from-gray-900 to-blue-900 relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0">
+    <div class="legal-particles"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6">
+        <span class="text-white">How We</span>
+        <span class="gradient-text-3d block">DESTROY</span>
+        <span class="text-white">Debt Lawsuits</span>
+      </h2>
+      <p class="text-2xl text-gray-300 max-w-4xl mx-auto">
+        Advanced legal strategies with cutting-edge technology to protect your assets
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service Card 1 -->
+      <div class="service-card-3d group perspective-1000">
+        <div class="service-inner transform-style-preserve-3d">
+          <!-- Front -->
+          <div class="service-face service-front">
+            <div class="service-icon-3d">
+              <div class="icon-cube">
+                <div class="cube-face cube-front">
+                  <mat-icon>search</mat-icon>
+                </div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+              </div>
+            </div>
+            <h3 class="service-title-3d">AI Case Analysis</h3>
+            <p class="service-desc-3d">Advanced AI scans your case for weaknesses in 60 seconds</p>
+          </div>
+          
+          <!-- Back -->
+          <div class="service-face service-back">
+            <div class="service-back-content">
+              <h4 class="text-xl font-bold text-white mb-4">What We Analyze:</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>✓ Document authenticity</li>
+                <li>✓ Statute of limitations</li>
+                <li>✓ Procedural errors</li>
+                <li>✓ Evidence validity</li>
+              </ul>
+              <button class="mt-4 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg">
+                Start Analysis
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card-3d group perspective-1000">
+        <div class="service-inner transform-style-preserve-3d">
+          <!-- Front -->
+          <div class="service-face service-front">
+            <div class="service-icon-3d">
+              <div class="icon-cube">
+                <div class="cube-face cube-front">
+                  <mat-icon>security</mat-icon>
+                </div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+              </div>
+            </div>
+            <h3 class="service-title-3d">Legal Fortress</h3>
+            <p class="service-desc-3d">Bulletproof defense strategy built by expert attorneys</p>
+          </div>
+          
+          <!-- Back -->
+          <div class="service-face service-back">
+            <div class="service-back-content">
+              <h4 class="text-xl font-bold text-white mb-4">Defense Tactics:</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>✓ Challenge documentation</li>
+                <li>✓ Dispute ownership</li>
+                <li>✓ File counterclaims</li>
+                <li>✓ Asset protection</li>
+              </ul>
+              <button class="mt-4 px-4 py-2 bg-gradient-to-r from-green-500 to-blue-600 text-white rounded-lg">
+                Build Defense
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card-3d group perspective-1000">
+        <div class="service-inner transform-style-preserve-3d">
+          <!-- Front -->
+          <div class="service-face service-front">
+            <div class="service-icon-3d">
+              <div class="icon-cube">
+                <div class="cube-face cube-front">
+                  <mat-icon>handshake</mat-icon>
+                </div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+              </div>
+            </div>
+            <h3 class="service-title-3d">Negotiation Ninja</h3>
+            <p class="service-desc-3d">Master negotiators get 70%+ reductions on average</p>
+          </div>
+          
+          <!-- Back -->
+          <div class="service-face service-back">
+            <div class="service-back-content">
+              <h4 class="text-xl font-bold text-white mb-4">Negotiation Power:</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>✓ 70%+ debt reduction</li>
+                <li>✓ Payment plan options</li>
+                <li>✓ Interest elimination</li>
+                <li>✓ Full dismissal goals</li>
+              </ul>
+              <button class="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-600 text-white rounded-lg">
+                Start Negotiating
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card-3d group perspective-1000">
+        <div class="service-inner transform-style-preserve-3d">
+          <!-- Front -->
+          <div class="service-face service-front">
+            <div class="service-icon-3d">
+              <div class="icon-cube">
+                <div class="cube-face cube-front">
+                  <mat-icon>shield</mat-icon>
+                </div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+              </div>
+            </div>
+            <h3 class="service-title-3d">Asset Shield</h3>
+            <p class="service-desc-3d">Ironclad protection for your property and accounts</p>
+          </div>
+          
+          <!-- Back -->
+          <div class="service-face service-back">
+            <div class="service-back-content">
+              <h4 class="text-xl font-bold text-white mb-4">Protected Assets:</h4>
+              <ul class="text-gray-300 space-y-2">
+                <li>✓ Primary residence</li>
+                <li>✓ Bank accounts</li>
+                <li>✓ Business assets</li>
+                <li>✓ Personal property</li>
+              </ul>
+              <button class="mt-4 px-4 py-2 bg-gradient-to-r from-red-500 to-orange-600 text-white rounded-lg">
+                Shield Assets
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Victory Showcase -->
+<section class="py-32 bg-white relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6 text-gray-900">
+        <span class="gradient-text-3d">CRUSHING</span> Victories
+      </h2>
+      <p class="text-2xl text-gray-600">Real cases, real results, real people saved from financial ruin</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Victory Card 1 -->
+      <div class="victory-card-3d perspective-1000">
+        <div class="victory-inner transform-style-preserve-3d">
+          <div class="victory-header">
+            <div class="victory-badge dismissed">CASE DISMISSED</div>
+            <div class="victory-amount">₹85,00,000</div>
+          </div>
+          
+          <div class="victory-visual">
+            <div class="debt-destroyer">
+              <div class="debt-before">₹85L</div>
+              <div class="destruction-animation">
+                <div class="crusher"></div>
+                <div class="debris"></div>
+              </div>
+              <div class="debt-after">₹0</div>
+            </div>
+            <div class="victory-percentage">100% ELIMINATED</div>
+          </div>
+          
+          <div class="victory-story">
+            <h3 class="victory-title">Credit Card Lawsuit</h3>
+            <p class="victory-description">"They found every flaw in the case. Debt buyer couldn't prove a thing!"</p>
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/50?img=71" alt="Rahul" class="client-avatar">
+              <div>
+                <div class="client-name">Rahul Sharma</div>
+                <div class="client-location">Mumbai, Maharashtra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Victory Card 2 -->
+      <div class="victory-card-3d perspective-1000">
+        <div class="victory-inner transform-style-preserve-3d">
+          <div class="victory-header">
+            <div class="victory-badge settlement">MEGA SETTLEMENT</div>
+            <div class="victory-amount">₹45,00,000</div>
+          </div>
+          
+          <div class="victory-visual">
+            <div class="savings-meter">
+              <div class="meter-background"></div>
+              <div class="meter-fill"></div>
+              <div class="meter-needle"></div>
+              <div class="meter-label">73% SAVED</div>
+            </div>
+            <div class="final-payment">Only ₹12L paid</div>
+          </div>
+          
+          <div class="victory-story">
+            <h3 class="victory-title">Personal Loan Settlement</h3>
+            <p class="victory-description">"Incredible negotiation skills. Saved my family from bankruptcy!"</p>
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/50?img=72" alt="Priya" class="client-avatar">
+              <div>
+                <div class="client-name">Priya Patel</div>
+                <div class="client-location">Delhi, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Victory Card 3 -->
+      <div class="victory-card-3d perspective-1000">
+        <div class="victory-inner transform-style-preserve-3d">
+          <div class="victory-header">
+            <div class="victory-badge protected">ASSETS PROTECTED</div>
+            <div class="victory-amount">₹1,25,00,000</div>
+          </div>
+          
+          <div class="victory-visual">
+            <div class="protection-fortress">
+              <div class="fortress-walls"></div>
+              <div class="protected-assets">
+                <div class="asset-icon home">🏠</div>
+                <div class="asset-icon business">🏢</div>
+                <div class="asset-icon bank">🏦</div>
+              </div>
+              <div class="shield-glow"></div>
+            </div>
+            <div class="protection-status">FULLY SECURED</div>
+          </div>
+          
+          <div class="victory-story">
+            <h3 class="victory-title">Business Debt Protection</h3>
+            <p class="victory-description">"They built an impenetrable legal fortress around my assets!"</p>
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/50?img=73" alt="Kiran" class="client-avatar">
+              <div>
+                <div class="client-name">Kiran Singh</div>
+                <div class="client-location">Bangalore, Karnataka</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D CTA Section -->
+<section class="py-32 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-red-900 via-purple-900 to-blue-900">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <!-- Animated legal symbols -->
+    <div class="legal-symbol-rain"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- 3D Warning Badge -->
+      <div class="warning-badge-3d perspective-1000 mb-8">
+        <div class="warning-inner transform-style-preserve-3d animate-float">
+          <div class="warning-face warning-front">
+            <mat-icon class="text-red-400 animate-pulse text-4xl">warning</mat-icon>
+            <span class="text-red-300 font-black text-xl">LAWSUIT PENDING?</span>
+          </div>
+          <div class="warning-face warning-back">
+            <mat-icon class="text-green-400 text-4xl">security</mat-icon>
+            <span class="text-green-300 font-black text-xl">WE'LL CRUSH IT!</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D Main Headline -->
+      <h2 class="text-5xl md:text-8xl font-black text-white mb-8 perspective-1000">
+        <div class="cta-headline transform-style-preserve-3d">
+          <span class="headline-text">TIME IS</span>
+          <span class="headline-shadow"></span>
+        </div>
+        <div class="cta-headline transform-style-preserve-3d" style="animation-delay: 0.2s">
+          <span class="headline-text gradient-text-3d">RUNNING OUT</span>
+          <span class="headline-shadow-gradient"></span>
+        </div>
+      </h2>
+      
+      <p class="text-2xl md:text-3xl text-gray-200 mb-12 leading-relaxed">
+        Every second you wait, your legal options <span class="text-red-400 font-bold">DISAPPEAR</span><br>
+        Don't let debt collectors <span class="text-red-400 font-bold">DESTROY YOUR LIFE</span>
+      </p>
+      
+      <!-- 3D Action Center -->
+      <div class="action-center-3d perspective-1000 mb-12">
+        <div class="action-inner transform-style-preserve-3d">
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <!-- Emergency Button -->
+            <a routerLink="/contact" class="emergency-btn-3d group">
+              <div class="emergency-inner transform-style-preserve-3d">
+                <div class="btn-face emergency-front">
+                  <mat-icon class="mr-2 text-2xl">bolt</mat-icon>
+                  <span class="font-black">EMERGENCY PROTECTION</span>
+                </div>
+                <div class="btn-face emergency-top"></div>
+                <div class="btn-face emergency-right"></div>
+                <div class="btn-face emergency-bottom"></div>
+              </div>
+            </a>
+            
+            <!-- Call Button -->
+            <a href="tel:+1234567890" class="call-btn-3d group">
+              <div class="call-inner transform-style-preserve-3d">
+                <div class="btn-face call-front">
+                  <mat-icon class="mr-2 text-2xl animate-pulse">phone</mat-icon>
+                  <span class="font-black">CALL NOW: (123) 456-7890</span>
+                </div>
+                <div class="btn-face call-top"></div>
+                <div class="btn-face call-right"></div>
+                <div class="btn-face call-bottom"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Countdown Timer -->
+      <div class="countdown-3d perspective-1000 mb-8">
+        <div class="countdown-inner transform-style-preserve-3d">
+          <div class="countdown-label">Free consultation expires in:</div>
+          <div class="countdown-timer">
+            <div class="timer-unit">
+              <div class="timer-number">{{ hours }}</div>
+              <div class="timer-label">Hours</div>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-unit">
+              <div class="timer-number">{{ minutes }}</div>
+              <div class="timer-label">Minutes</div>
+            </div>
+            <div class="timer-separator">:</div>
+            <div class="timer-unit">
+              <div class="timer-number">{{ seconds }}</div>
+              <div class="timer-label">Seconds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Trust Badges 3D -->
+      <div class="trust-badges-3d">
+        <div class="badge-3d-item">
+          <mat-icon class="text-yellow-400">verified</mat-icon>
+          <span>Licensed Attorneys</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon class="text-green-400">security</mat-icon>
+          <span>100% Confidential</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon class="text-blue-400">flash_on</mat-icon>
+          <span>Emergency Response</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

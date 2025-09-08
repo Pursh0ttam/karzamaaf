@@ -1,0 +1,434 @@
+<!-- Hero Section with 3D Credit Card Elements -->
+<section class="hero-3d relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Dynamic Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900">
+    <div class="absolute inset-0 opacity-20"></div>
+    
+    <!-- Floating 3D Credit Card Elements -->
+    <div class="floating-cards">
+      <div class="credit-card card-1"></div>
+      <div class="credit-card card-2"></div>
+      <div class="money-symbol symbol-1"></div>
+      <div class="money-symbol symbol-2"></div>
+      <div class="settlement-icon settle-1"></div>
+      <div class="settlement-icon settle-2"></div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Left Column - 3D Content -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        <!-- 3D Badge -->
+        <div class="mb-8 perspective-1000">
+          <div class="badge-3d transform-style-preserve-3d animate-float">
+            <div class="badge-face badge-front">
+              <mat-icon class="text-emerald-400 animate-pulse">credit_card</mat-icon>
+              <span class="font-bold text-white">SETTLEMENT EXPERTS</span>
+            </div>
+            <div class="badge-face badge-back">
+              <mat-icon class="text-green-400">verified</mat-icon>
+              <span class="font-bold text-white">DEBT FREEDOM</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 3D Headline -->
+        <h1 class="text-4xl md:text-7xl font-black leading-tight mb-8 perspective-1000">
+          <div class="headline-3d transform-style-preserve-3d">
+            <span class="headline-text text-white drop-shadow-2xl">
+              CREDIT CARD
+            </span>
+            <span class="headline-shadow"></span>
+          </div>
+          <div class="headline-3d transform-style-preserve-3d" style="animation-delay: 0.2s">
+            <span class="headline-text gradient-text-3d drop-shadow-2xl">
+              LOAN SETTLEMENT
+            </span>
+            <span class="headline-shadow-gradient"></span>
+          </div>
+          <div class="headline-3d transform-style-preserve-3d" style="animation-delay: 0.4s">
+            <span class="headline-text text-white drop-shadow-2xl">
+              EXPERTS
+            </span>
+            <span class="headline-shadow"></span>
+          </div>
+        </h1>
+        
+        <!-- Animated Subtitle -->
+        <p class="text-xl md:text-2xl text-gray-200 mb-8 animate-fade-slide-up" style="animation-delay: 0.8s">
+          Settle your credit card debt for <span class="text-highlight">40-60% less</span> • 
+          <span class="text-highlight">Legal protection</span> • 
+          <span class="text-highlight">Fast resolution</span>
+        </p>
+        
+        <!-- 3D Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 mb-8" style="animation-delay: 1s">
+          <button (click)="onStartSettlement()" class="btn-3d-primary group perspective-1000">
+            <div class="btn-3d-body transform-style-preserve-3d">
+              <div class="btn-face btn-top">
+                <mat-icon class="mr-2">savings</mat-icon>
+                START SETTLEMENT NOW
+              </div>
+              <div class="btn-face btn-front">
+                <mat-icon class="mr-2">savings</mat-icon>
+                START SETTLEMENT NOW
+              </div>
+              <div class="btn-face btn-right"></div>
+              <div class="btn-face btn-bottom"></div>
+            </div>
+          </button>
+          
+          <button (click)="onTalkToExpert()" class="btn-3d-secondary group perspective-1000">
+            <div class="btn-3d-body transform-style-preserve-3d">
+              <div class="btn-face btn-top-secondary">
+                <mat-icon class="mr-2">support_agent</mat-icon>
+                TALK TO AN EXPERT
+              </div>
+              <div class="btn-face btn-front-secondary">
+                <mat-icon class="mr-2">support_agent</mat-icon>
+                TALK TO AN EXPERT
+              </div>
+              <div class="btn-face btn-right-secondary"></div>
+              <div class="btn-face btn-bottom-secondary"></div>
+            </div>
+          </button>
+        </div>
+
+        <!-- 3D Stats Row -->
+        <div class="grid grid-cols-4 gap-4 animate-fade-slide-up" style="animation-delay: 1.2s">
+          <div class="stat-3d-mini" *ngFor="let stat of stats">
+            <div class="stat-3d-content">
+              <div class="stat-number-3d">{{ stat.value }}</div>
+              <div class="stat-label-3d">{{ stat.label }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - 3D Settlement Calculator -->
+      <div class="lg:col-span-5 animate-fade-slide-up" style="animation-delay: 1.4s">
+        <div class="settlement-calculator-3d perspective-1000">
+          <div class="calculator-container transform-style-preserve-3d">
+            
+            <!-- Calculator Header -->
+            <div class="calculator-header">
+              <div class="status-indicator">
+                <div class="status-dot animate-pulse"></div>
+                <span class="status-text">INSTANT SETTLEMENT ESTIMATE</span>
+              </div>
+              <div class="calculator-title">Debt Settlement Calculator</div>
+            </div>
+
+            <!-- Settlement Preview -->
+            <div class="settlement-preview">
+              <div class="preview-card preview-1">
+                <div class="preview-icon">
+                  <mat-icon>credit_card</mat-icon>
+                </div>
+                <div class="preview-content">
+                  <div class="preview-label">Current Debt</div>
+                  <div class="preview-value">₹5,00,000</div>
+                </div>
+              </div>
+
+              <div class="arrow-down">
+                <mat-icon>keyboard_arrow_down</mat-icon>
+              </div>
+
+              <div class="preview-card preview-2">
+                <div class="preview-icon">
+                  <mat-icon>savings</mat-icon>
+                </div>
+                <div class="preview-content">
+                  <div class="preview-label">Settlement Amount</div>
+                  <div class="preview-value settlement-amount">₹2,00,000</div>
+                </div>
+              </div>
+
+              <div class="savings-highlight">
+                <div class="savings-badge">
+                  <mat-icon>trending_down</mat-icon>
+                  <span>60% SAVINGS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Benefits List -->
+            <div class="benefits-preview">
+              <div class="benefit-item">
+                <mat-icon class="benefit-icon">check_circle</mat-icon>
+                <span>No more collection calls</span>
+              </div>
+              <div class="benefit-item">
+                <mat-icon class="benefit-icon">check_circle</mat-icon>
+                <span>Legal protection included</span>
+              </div>
+              <div class="benefit-item">
+                <mat-icon class="benefit-icon">check_circle</mat-icon>
+                <span>90-day resolution timeline</span>
+              </div>
+            </div>
+
+            <!-- Quick Action -->
+            <div class="quick-settlement">
+              <button class="settlement-btn">
+                <mat-icon>calculate</mat-icon>
+                <span>Get Personalized Estimate</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Benefits Section -->
+<section class="py-32 bg-gradient-to-br from-gray-900 to-slate-900 relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0">
+    <div class="financial-particles"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6">
+        <span class="text-white">Why Choose</span>
+        <span class="gradient-text-3d block">SETTLEMENT</span>
+        <span class="text-white">Over Bankruptcy?</span>
+      </h2>
+      <p class="text-2xl text-gray-300 max-w-4xl mx-auto">
+        Smart debt resolution that protects your future and saves you money
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Benefit Card -->
+      <div class="benefit-card-3d group perspective-1000" *ngFor="let benefit of benefits; let i = index">
+        <div class="benefit-inner transform-style-preserve-3d" [style.animation-delay]="(i * 0.2) + 's'">
+          <!-- Front -->
+          <div class="benefit-face benefit-front">
+            <div class="benefit-icon-3d" [ngClass]="'icon-' + benefit.color">
+              <div class="icon-cube">
+                <div class="cube-face cube-front">
+                  <mat-icon>{{ benefit.icon }}</mat-icon>
+                </div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+              </div>
+            </div>
+            
+            <div class="benefit-percentage" [ngClass]="'text-' + benefit.color + '-400'">
+              {{ benefit.percentage }}
+            </div>
+            
+            <h3 class="benefit-title-3d">{{ benefit.title }}</h3>
+            <p class="benefit-desc-3d">{{ benefit.description }}</p>
+          </div>
+          
+          <!-- Back -->
+          <div class="benefit-face benefit-back">
+            <div class="benefit-back-content">
+              <h4 class="text-xl font-bold text-white mb-4">Key Features:</h4>
+              <ul class="text-gray-300 space-y-2 text-left">
+                <li *ngIf="benefit.icon === 'savings'">✓ Average 40-60% debt reduction</li>
+                <li *ngIf="benefit.icon === 'savings'">✓ One-time settlement payment</li>
+                <li *ngIf="benefit.icon === 'savings'">✓ No ongoing monthly payments</li>
+                
+                <li *ngIf="benefit.icon === 'schedule'">✓ 90-180 day resolution</li>
+                <li *ngIf="benefit.icon === 'schedule'">✓ Faster than bankruptcy</li>
+                <li *ngIf="benefit.icon === 'schedule'">✓ Quick debt freedom</li>
+                
+                <li *ngIf="benefit.icon === 'shield'">✓ Expert negotiation team</li>
+                <li *ngIf="benefit.icon === 'shield'">✓ Legal documentation</li>
+                <li *ngIf="benefit.icon === 'shield'">✓ Creditor communication</li>
+                
+                <li *ngIf="benefit.icon === 'trending_up'">✓ Credit rebuilding plan</li>
+                <li *ngIf="benefit.icon === 'trending_up'">✓ Financial counseling</li>
+                <li *ngIf="benefit.icon === 'trending_up'">✓ Future protection</li>
+              </ul>
+              <button class="mt-4 px-4 py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-lg">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Blog Section -->
+<section class="py-32 bg-white relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6 text-gray-900">
+        <span class="gradient-text-3d">EXPERT INSIGHTS</span>
+        <span class="text-gray-900 block">on Credit Card Settlement</span>
+      </h2>
+      <p class="text-2xl text-gray-600 max-w-4xl mx-auto">
+        Stay informed with the latest strategies and legal updates for successful debt settlement
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Blog Card -->
+      <article class="blog-card-3d group perspective-1000" *ngFor="let post of blogPosts; let i = index">
+        <div class="blog-inner transform-style-preserve-3d" [style.animation-delay]="(i * 0.2) + 's'">
+          <!-- Front -->
+          <div class="blog-face blog-front">
+            <div class="blog-image-container">
+              <img [src]="post.image" [alt]="post.title" class="blog-image">
+              <div class="blog-overlay"></div>
+              <div class="blog-category">{{ post.category }}</div>
+            </div>
+            
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span class="blog-date">{{ post.publishDate }}</span>
+                <span class="blog-read-time">{{ post.readTime }}</span>
+              </div>
+              
+              <h3 class="blog-title">{{ post.title }}</h3>
+              <p class="blog-description">{{ post.description }}</p>
+              
+              <button class="blog-btn-3d" (click)="onReadMore(post.id)">
+                <span class="btn-text">Read More</span>
+                <mat-icon class="btn-icon">arrow_forward</mat-icon>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Back -->
+          <div class="blog-face blog-back">
+            <div class="blog-back-content">
+              <div class="back-header">
+                <mat-icon class="back-icon">article</mat-icon>
+                <h4 class="back-title">Article Preview</h4>
+              </div>
+              
+              <div class="back-highlights">
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Expert Analysis</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Practical Tips</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Legal Insights</span>
+                </div>
+              </div>
+              
+              <button class="read-full-btn" (click)="onReadMore(post.id)">
+                <mat-icon>visibility</mat-icon>
+                <span>Read Full Article</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3D CTA Section -->
+<section class="py-32 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <!-- Animated settlement symbols -->
+    <div class="settlement-symbol-rain"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- 3D Debt Badge -->
+      <div class="debt-badge-3d perspective-1000 mb-8">
+        <div class="debt-inner transform-style-preserve-3d animate-float">
+          <div class="debt-face debt-front">
+            <mat-icon class="text-red-400 animate-pulse text-4xl">credit_card</mat-icon>
+            <span class="text-red-300 font-black text-xl">DROWNING IN DEBT?</span>
+          </div>
+          <div class="debt-face debt-back">
+            <mat-icon class="text-green-400 text-4xl">savings</mat-icon>
+            <span class="text-green-300 font-black text-xl">WE'LL SAVE YOU!</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D Main Headline -->
+      <h2 class="text-5xl md:text-8xl font-black text-white mb-8 perspective-1000">
+        <div class="cta-headline transform-style-preserve-3d">
+          <span class="headline-text">DON'T WAIT</span>
+          <span class="headline-shadow"></span>
+        </div>
+        <div class="cta-headline transform-style-preserve-3d" style="animation-delay: 0.2s">
+          <span class="headline-text gradient-text-3d">SETTLE TODAY</span>
+          <span class="headline-shadow-gradient"></span>
+        </div>
+      </h2>
+      
+      <p class="text-2xl md:text-3xl text-gray-200 mb-12 leading-relaxed">
+        Every day you wait, your debt <span class="text-red-400 font-bold">GROWS LARGER</span><br>
+        Start your settlement process <span class="text-emerald-400 font-bold">TODAY</span>
+      </p>
+      
+      <!-- 3D Action Center -->
+      <div class="action-center-3d perspective-1000 mb-12">
+        <div class="action-inner transform-style-preserve-3d">
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <!-- Primary CTA Button -->
+            <button (click)="onStartSettlement()" class="settlement-primary-btn-3d group">
+              <div class="settlement-primary-inner transform-style-preserve-3d">
+                <div class="btn-face settlement-primary-front">
+                  <mat-icon class="mr-2 text-2xl">savings</mat-icon>
+                  <span class="font-black">START SETTLEMENT NOW</span>
+                </div>
+                <div class="btn-face settlement-primary-top"></div>
+                <div class="btn-face settlement-primary-right"></div>
+                <div class="btn-face settlement-primary-bottom"></div>
+              </div>
+            </button>
+            
+            <!-- Secondary CTA Button -->
+            <a href="tel:+1234567890" class="settlement-secondary-btn-3d group">
+              <div class="settlement-secondary-inner transform-style-preserve-3d">
+                <div class="btn-face settlement-secondary-front">
+                  <mat-icon class="mr-2 text-2xl animate-pulse">phone</mat-icon>
+                  <span class="font-black">CALL NOW: (123) 456-7890</span>
+                </div>
+                <div class="btn-face settlement-secondary-top"></div>
+                <div class="btn-face settlement-secondary-right"></div>
+                <div class="btn-face settlement-secondary-bottom"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Trust Badges 3D -->
+      <div class="trust-badges-3d">
+        <div class="badge-3d-item">
+          <mat-icon class="text-yellow-400">verified</mat-icon>
+          <span>Licensed Debt Experts</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon class="text-green-400">security</mat-icon>
+          <span>100% Confidential</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon class="text-emerald-400">savings</mat-icon>
+          <span>No Upfront Fees</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

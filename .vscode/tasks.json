@@ -1,5 +1,4 @@
 {
-  // For more information, visit: https://go.microsoft.com/fwlink/?LinkId=733558
   "version": "2.0.0",
   "tasks": [
     {
@@ -15,7 +14,7 @@
             "regexp": "(.*?)"
           },
           "endsPattern": {
-            "regexp": "bundle generation complete"
+            "regexp": "(Local:\\s+http://localhost:4200/|Compiled successfully)"
           }
         }
       }
@@ -33,7 +32,7 @@
             "regexp": "(.*?)"
           },
           "endsPattern": {
-            "regexp": "bundle generation complete"
+            "regexp": "(Karma v\\d+\\.\\d+\\.\\d+ server started|Angular\\s+.*\\s+Compiled successfully)"
           }
         }
       }

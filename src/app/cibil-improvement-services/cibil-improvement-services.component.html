@@ -1,0 +1,445 @@
+<!-- Hero Section with 3D Financial Elements -->
+<section class="hero-3d relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Dynamic Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <div class="absolute inset-0 opacity-10 bg-pattern"></div>
+    
+    <!-- Floating 3D Financial Elements -->
+    <div class="floating-financial">
+      <div class="credit-card card-1"></div>
+      <div class="credit-card card-2"></div>
+      <div class="credit-card card-3"></div>
+      <div class="rupee-icon rupee-1">₹</div>
+      <div class="rupee-icon rupee-2">₹</div>
+      <div class="rupee-icon rupee-3">₹</div>
+      <div class="shield-icon shield-1">🛡️</div>
+      <div class="shield-icon shield-2">🛡️</div>
+      <div class="shield-icon shield-3">🛡️</div>
+      <div class="chart-icon chart-1">📈</div>
+      <div class="chart-icon chart-2">📈</div>
+      <div class="chart-icon chart-3">📈</div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <!-- Left Column - 3D Content -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        <!-- 3D Badge -->
+        <div class="mb-8 perspective-1000">
+          <div class="badge-3d transform-style-preserve-3d animate-float">
+            <div class="badge-face badge-front">
+              <mat-icon class="text-blue-400 animate-pulse">trending_up</mat-icon>
+              <span class="font-bold text-white">CIBIL EXPERTS</span>
+            </div>
+            <div class="badge-face badge-back">
+              <mat-icon class="text-gold-accent">verified</mat-icon>
+              <span class="font-bold text-white">SCORE IMPROVEMENT</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 3D Headline -->
+        <h1 class="text-4xl md:text-7xl font-black leading-tight mb-8 perspective-1000">
+          <div class="headline-3d transform-style-preserve-3d">
+            <span class="headline-text text-white drop-shadow-2xl font-serif">
+              CIBIL SCORE
+            </span>
+            <span class="headline-shadow"></span>
+          </div>
+          <div class="headline-3d transform-style-preserve-3d" style="animation-delay: 0.2s">
+            <span class="headline-text gradient-text-3d drop-shadow-2xl font-serif">
+              IMPROVEMENT
+            </span>
+            <span class="headline-shadow-gradient"></span>
+          </div>
+        </h1>
+        
+        <!-- Animated Subtitle -->
+        <p class="text-xl md:text-2xl text-gray-200 mb-8 animate-fade-slide-up" style="animation-delay: 0.8s">
+          Transform your financial future with <span class="text-highlight">expert credit repair</span> • 
+          <span class="text-highlight">score enhancement</span> • 
+          <span class="text-highlight">legal dispute resolution</span>
+        </p>
+        
+        <!-- 3D Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 mb-8 animate-fade-slide-up" style="animation-delay: 1s">
+          <button (click)="onGetHelp()" class="btn-3d-primary group perspective-1000">
+            <div class="btn-3d-body transform-style-preserve-3d">
+              <div class="btn-face btn-top"></div>
+              <div class="btn-face btn-front">
+                <mat-icon class="mr-2">trending_up</mat-icon>
+                IMPROVE MY SCORE
+              </div>
+              <div class="btn-face btn-right"></div>
+              <div class="btn-face btn-bottom"></div>
+            </div>
+          </button>
+          
+          <button (click)="onContactExperts()" class="btn-3d-secondary group perspective-1000">
+            <div class="btn-3d-body transform-style-preserve-3d">
+              <div class="btn-face btn-top-secondary"></div>
+              <div class="btn-face btn-front-secondary">
+                <mat-icon class="mr-2">support_agent</mat-icon>
+                CONTACT EXPERTS
+              </div>
+              <div class="btn-face btn-right-secondary"></div>
+              <div class="btn-face btn-bottom-secondary"></div>
+            </div>
+          </button>
+        </div>
+
+        <!-- 3D Stats Row -->
+        <div class="grid grid-cols-3 gap-4 animate-fade-slide-up" style="animation-delay: 1.2s">
+          <div class="stat-3d-mini">
+            <div class="stat-3d-content">
+              <div class="stat-number-3d">750+</div>
+              <div class="stat-label-3d">Avg Score</div>
+            </div>
+          </div>
+          <div class="stat-3d-mini">
+            <div class="stat-3d-content">
+              <div class="stat-number-3d">95%</div>
+              <div class="stat-label-3d">Success Rate</div>
+            </div>
+          </div>
+          <div class="stat-3d-mini">
+            <div class="stat-3d-content">
+              <div class="stat-number-3d">30</div>
+              <div class="stat-label-3d">Days Avg</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - 3D CIBIL Dashboard -->
+      <div class="lg:col-span-5 animate-fade-slide-up" style="animation-delay: 1.6s">
+        <div class="cibil-dashboard-3d perspective-1000">
+          <div class="dashboard-container transform-style-preserve-3d">
+            
+            <!-- Dashboard Header -->
+            <div class="dashboard-header">
+              <div class="status-indicator">
+                <div class="status-dot animate-pulse"></div>
+                <span class="status-text">IMPROVEMENT ACTIVE</span>
+              </div>
+              <div class="dashboard-title">CIBIL Score Monitor</div>
+            </div>
+
+            <!-- Score Meter 3D -->
+            <div class="score-meter-container">
+              <div class="score-meter-3d">
+                <div class="meter-outer">
+                  <div class="meter-inner">
+                    <div class="score-needle"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="score-center">
+                <div class="score-value">750</div>
+                <div class="score-label">CIBIL Score</div>
+              </div>
+              <div class="score-ranges">
+                <span class="range poor">Poor</span>
+                <span class="range fair">Fair</span>
+                <span class="range good">Good</span>
+                <span class="range excellent">Excellent</span>
+              </div>
+            </div>
+
+            <!-- Credit Metrics -->
+            <div class="credit-metrics">
+              <div class="metric-card">
+                <div class="metric-icon">💳</div>
+                <div class="metric-value">85%</div>
+                <div class="metric-label">Payment History</div>
+                <div class="metric-progress">
+                  <div class="progress-bar progress-excellent" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-icon">📊</div>
+                <div class="metric-value">30%</div>
+                <div class="metric-label">Credit Utilization</div>
+                <div class="metric-progress">
+                  <div class="progress-bar progress-good" style="width: 70%"></div>
+                </div>
+              </div>
+
+              <div class="metric-card">
+                <div class="metric-icon">📈</div>
+                <div class="metric-value">5 Yrs</div>
+                <div class="metric-label">Credit Age</div>
+                <div class="metric-progress">
+                  <div class="progress-bar progress-warning" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Activity Feed -->
+            <div class="activity-feed">
+              <div class="activity-header">Recent Improvements</div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-dot success"></div>
+                  <div class="activity-text">Score increased by 50 points</div>
+                  <div class="activity-time">2 days ago</div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot warning"></div>
+                  <div class="activity-text">Dispute filed for incorrect entry</div>
+                  <div class="activity-time">1 week ago</div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot info"></div>
+                  <div class="activity-text">Credit utilization improved</div>
+                  <div class="activity-time">2 weeks ago</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+              <button class="action-btn action-primary">
+                <mat-icon>assessment</mat-icon>
+                <span>View Report</span>
+              </button>
+              <button class="action-btn action-secondary">
+                <mat-icon>contact_support</mat-icon>
+                <span>Get Help</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Services Section -->
+<section class="py-32 bg-gradient-to-br from-gray-900 to-slate-900 relative overflow-hidden">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0">
+    <div class="financial-particles"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6 font-serif">
+        <span class="gradient-text-3d">Our CIBIL Services</span>
+      </h2>
+      <p class="text-2xl text-gray-300 max-w-4xl mx-auto font-light">
+        Comprehensive credit improvement solutions with expert financial guidance
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service Cards -->
+      <div class="service-card-3d group perspective-1000" *ngFor="let service of legalServices; let i = index">
+        <div class="service-inner transform-style-preserve-3d">
+          <div class="service-face service-front">
+            <div class="service-icon-3d">
+              <div class="icon-pyramid">
+                <div class="pyramid-face pyramid-front">
+                  <mat-icon>{{ service.icon }}</mat-icon>
+                </div>
+                <div class="pyramid-face pyramid-back"></div>
+                <div class="pyramid-face pyramid-right"></div>
+                <div class="pyramid-face pyramid-left"></div>
+                <div class="pyramid-face pyramid-bottom"></div>
+              </div>
+            </div>
+            <h3 class="service-title-3d">{{ service.title }}</h3>
+            <p class="service-desc-3d">{{ service.description }}</p>
+            <div class="service-learn-more">
+              <span>Hover to explore</span>
+              <mat-icon>arrow_forward</mat-icon>
+            </div>
+          </div>
+          <div class="service-face service-back">
+            <div class="service-back-content">
+              <div class="back-header">
+                <mat-icon class="back-icon">{{ service.icon }}</mat-icon>
+                <h3 class="back-title">{{ service.title }}</h3>
+              </div>
+              <div class="back-highlights">
+                <div class="highlight-item" *ngFor="let feature of service.features">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>{{ feature }}</span>
+                </div>
+              </div>
+              <button class="learn-more-btn">
+                <span>Get Protection</span>
+                <mat-icon>arrow_forward</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3D Blog Section -->
+<section class="py-32 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+  <!-- Legal Pattern Background -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="legal-pattern-bg"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="text-center mb-20">
+      <h2 class="text-5xl md:text-7xl font-black mb-6 text-slate-900 font-serif">
+        <span class="gradient-text">Legal Insights</span>
+      </h2>
+      <p class="text-2xl text-slate-600 max-w-4xl mx-auto font-light">
+        Expert guidance and resources to protect your rights against harassment
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Blog Cards -->
+      <article class="blog-card-3d group perspective-1000" *ngFor="let post of blogPosts; let i = index">
+        <div class="blog-inner transform-style-preserve-3d">
+          <div class="blog-face blog-front">
+            <div class="blog-image-container">
+              <img [src]="post.image" [alt]="post.title" class="blog-image">
+              <div class="blog-overlay"></div>
+              <div class="blog-category">{{ post.category }}</div>
+              <div class="blog-author">{{ post.author }}</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>{{ post.readTime }}</span>
+                <span>{{ post.publishDate }}</span>
+              </div>
+              <h3 class="blog-title">{{ post.title }}</h3>
+              <p class="blog-description">{{ post.description }}</p>
+              <button class="blog-btn-3d" (click)="onReadMore(post.id)">
+                <span>Read More</span>
+                <mat-icon>arrow_forward</mat-icon>
+              </button>
+            </div>
+          </div>
+          <div class="blog-face blog-back">
+            <div class="blog-back-content">
+              <div class="back-header">
+                <mat-icon class="back-icon">article</mat-icon>
+                <h3 class="back-title">{{ post.category }}</h3>
+              </div>
+              <div class="back-highlights">
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Expert Legal Advice</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Practical Solutions</span>
+                </div>
+                <div class="highlight-item">
+                  <mat-icon>check_circle</mat-icon>
+                  <span>Real Case Studies</span>
+                </div>
+              </div>
+              <button class="read-full-btn" (click)="onReadMore(post.id)">
+                <span>Read Full Article</span>
+                <mat-icon>open_in_new</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3D CTA Section -->
+<section class="py-32 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <div class="absolute inset-0 bg-black/30"></div>
+    <!-- Animated legal symbols -->
+    <div class="legal-symbol-rain"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="max-w-5xl mx-auto">
+      
+      <!-- 3D Justice Badge -->
+      <div class="justice-badge-3d perspective-1000 mb-8 inline-block">
+        <div class="justice-inner transform-style-preserve-3d">
+          <div class="justice-face justice-front">
+            <mat-icon class="badge-icon">balance</mat-icon>
+            <span class="badge-text">HARASSMENT PROTECTION EXPERTS</span>
+            <span class="badge-score">500+</span>
+          </div>
+          <div class="justice-face justice-back">
+            <mat-icon class="badge-icon">gavel</mat-icon>
+            <span class="badge-text">LEGAL ADVOCACY SPECIALISTS</span>
+            <span class="badge-score">98%</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 3D Main Headline -->
+      <h2 class="text-5xl md:text-8xl font-black text-white mb-8 perspective-1000 font-serif">
+        <div class="cta-headline transform-style-preserve-3d">
+          <span class="gradient-text-3d">Ready to Fight Back?</span>
+        </div>
+      </h2>
+      
+      <p class="text-2xl md:text-3xl text-gray-200 mb-12 leading-relaxed">
+        Don't let harassment define your life. Get expert legal protection and advocacy 
+        with our <span class="text-highlight">experienced legal team</span>.
+      </p>
+      
+      <!-- 3D Action Center -->
+      <div class="action-center-3d perspective-1000 mb-12">
+        <div class="flex flex-col md:flex-row gap-8 justify-center">
+          <div class="legal-primary-btn-3d perspective-1000">
+            <div class="legal-primary-inner transform-style-preserve-3d">
+              <div class="btn-face legal-primary-top"></div>
+              <div class="btn-face legal-primary-front">
+                <span>Start Your Legal Protection</span>
+              </div>
+              <div class="btn-face legal-primary-right"></div>
+              <div class="btn-face legal-primary-bottom"></div>
+            </div>
+          </div>
+          
+          <div class="legal-secondary-btn-3d perspective-1000">
+            <div class="legal-secondary-inner transform-style-preserve-3d">
+              <div class="btn-face legal-secondary-top"></div>
+              <div class="btn-face legal-secondary-front">
+                <span>Free Legal Consultation</span>
+              </div>
+              <div class="btn-face legal-secondary-right"></div>
+              <div class="btn-face legal-secondary-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Trust Badges 3D -->
+      <div class="trust-badges-3d">
+        <div class="badge-3d-item">
+          <mat-icon>gavel</mat-icon>
+          <span>Legal Expertise</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon>security</mat-icon>
+          <span>Confidential Service</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon>verified</mat-icon>
+          <span>Proven Results</span>
+        </div>
+        <div class="badge-3d-item">
+          <mat-icon>support_agent</mat-icon>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

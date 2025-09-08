@@ -1,0 +1,580 @@
+<!-- Hero Section - Redesigned Layout -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <!-- Animated Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+    <div class="absolute inset-0 bg-black/20"></div>
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+      <div class="floating-circle circle-1"></div>
+      <div class="floating-circle circle-2"></div>
+      <div class="floating-circle circle-3"></div>
+      <div class="floating-circle circle-4"></div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[80vh]">
+      
+      <!-- Left Column - Main Content -->
+      <div class="lg:col-span-7 text-center lg:text-left">
+        <!-- Badge with Animation -->
+        <div class="mb-6 animate-fade-in-up" style="animation-delay: 0.2s">
+          <span class="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold">
+            <mat-icon class="text-green-400 mr-2 animate-pulse">verified</mat-icon>
+            Licensed Legal Experts Since 2017
+          </span>
+        </div>
+        
+        <!-- Main Headline with Gradient Text -->
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.4s">
+          <span class="gradient-text">Break Free</span><br>
+          <span class="text-white">From Debt</span><br>
+          <span class="gradient-text">Forever</span>
+        </h1>
+        
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-gray-200 mb-8 animate-fade-in-up" style="animation-delay: 0.6s">
+          Expert legal settlement • Harassment protection • CIBIL restoration
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.8s">
+          <a routerLink="/contact" class="btn-primary group">
+            <span class="relative z-10">Get Free Consultation</span>
+            <div class="btn-bg"></div>
+          </a>
+          <a href="tel:+1234567890" class="btn-secondary group">
+            <mat-icon class="mr-2">phone</mat-icon>
+            <span>Call: (123) 456-7890</span>
+          </a>
+        </div>
+
+        <!-- Trust Indicators - Horizontal Layout -->
+        <div class="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in-up" style="animation-delay: 1s">
+          <div class="trust-badge">
+            <mat-icon class="text-yellow-400">star</mat-icon>
+            <span class="text-white font-semibold">4.9★ Rating</span>
+          </div>
+          <div class="trust-badge">
+            <mat-icon class="text-green-400">verified</mat-icon>
+            <span class="text-white font-semibold">1000+ Cases Won</span>
+          </div>
+          <div class="trust-badge">
+            <mat-icon class="text-blue-400">security</mat-icon>
+            <span class="text-white font-semibold">100% Confidential</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Google Reviews -->
+      <div class="lg:col-span-5 animate-fade-in-up" style="animation-delay: 1.2s">
+        <div class="hero-reviews-container">
+          <!-- Reviews Header -->
+          <div class="reviews-header-compact">
+            <div class="reviews-intro-compact">
+              <p class="reviews-subtitle-compact">Trusted by thousands of clients</p>
+              <h3 class="reviews-title-compact">What our clients say</h3>
+            </div>
+            
+            <div class="google-rating-compact">
+              <div class="google-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" class="google-logo-small">
+                <span class="google-text-small">Reviews</span>
+              </div>
+              <div class="rating-compact">
+                <div class="stars-compact">
+                  <mat-icon *ngFor="let star of [1,2,3,4,5]" class="star-small">star</mat-icon>
+                </div>
+                <div class="rating-text">
+                  <span class="score">4.9</span>
+                  <span class="count">(247 reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Compact Review Cards -->
+          <div class="reviews-compact-grid">
+            <!-- Review 1 -->
+            <div class="review-card-compact">
+              <div class="review-header-compact">
+                <div class="reviewer-compact">
+                  <img src="https://i.pravatar.cc/32?img=68" alt="Rajesh" class="avatar-small">
+                  <div class="reviewer-info-compact">
+                    <h5 class="reviewer-name-small">Rajesh K.</h5>
+                    <div class="stars-mini">
+                      <mat-icon *ngFor="let star of [1,2,3,4,5]" class="star-mini">star</mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="review-text-compact">
+                "They settled my ₹8L debt for just ₹3L. Professional and trustworthy!"
+              </p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card-compact">
+              <div class="review-header-compact">
+                <div class="reviewer-compact">
+                  <img src="https://i.pravatar.cc/32?img=69" alt="Priya" class="avatar-small">
+                  <div class="reviewer-info-compact">
+                    <h5 class="reviewer-name-small">Priya S.</h5>
+                    <div class="stars-mini">
+                      <mat-icon *ngFor="let star of [1,2,3,4,5]" class="star-mini">star</mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="review-text-compact">
+                "Credit card debt was overwhelming. Now debt-free with improved CIBIL!"
+              </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card-compact">
+              <div class="review-header-compact">
+                <div class="reviewer-compact">
+                  <img src="https://i.pravatar.cc/32?img=70" alt="Amit" class="avatar-small">
+                  <div class="reviewer-info-compact">
+                    <h5 class="reviewer-name-small">Amit P.</h5>
+                    <div class="stars-mini">
+                      <mat-icon *ngFor="let star of [1,2,3,4,5]" class="star-mini">star</mat-icon>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="review-text-compact">
+                "Excellent communication. Harassment stopped immediately!"
+              </p>
+            </div>
+          </div>
+
+          <!-- View More -->
+          <div class="text-center mt-4">
+            <a href="#testimonials" class="view-more-compact">
+              <span>View more reviews</span>
+              <mat-icon>keyboard_arrow_down</mat-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <mat-icon class="text-white text-3xl">expand_more</mat-icon>
+  </div>
+</section>
+
+<!-- Stats Section with Counter Animation -->
+<section class="py-20 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50"></div>
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div class="stat-card group" #statsSection>
+        <div class="stat-icon bg-gradient-to-br from-blue-400 to-blue-600">
+          <mat-icon>people</mat-icon>
+        </div>
+        <p class="stat-number text-5xl font-black text-gray-800 mb-2">{{ clientsServed.current }}+</p>
+        <p class="stat-label">Happy Clients</p>
+        <div class="stat-progress"></div>
+      </div>
+      <div class="stat-card group">
+        <div class="stat-icon bg-gradient-to-br from-green-400 to-green-600">
+          <mat-icon>attach_money</mat-icon>
+        </div>
+        <p class="stat-number text-5xl font-black text-gray-800 mb-2">${{ debtHandled.current }}M+</p>
+        <p class="stat-label">Debt Settled</p>
+        <div class="stat-progress"></div>
+      </div>
+      <div class="stat-card group">
+        <div class="stat-icon bg-gradient-to-br from-purple-400 to-purple-600">
+          <mat-icon>thumb_up</mat-icon>
+        </div>
+        <p class="stat-number text-5xl font-black text-gray-800 mb-2">{{ satisfaction.current }}%</p>
+        <p class="stat-label">Success Rate</p>
+        <div class="stat-progress"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Section with Parallax Effect -->
+<section class="relative py-32 overflow-hidden">
+  <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3')"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/60"></div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-6xl font-black text-white mb-8 animate-fade-in-up">
+        Our <span class="gradient-text">Mission</span>
+      </h2>
+      <p class="text-xl md:text-2xl text-gray-200 leading-relaxed animate-fade-in-up" style="animation-delay: 0.3s">
+        At KarzaMaaf, we believe financial freedom is a fundamental right. Our mission is to transform lives by providing compassionate, ethical, and effective legal solutions that break the chains of debt forever.
+      </p>
+      
+      <!-- Mission Values Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        <div class="mission-card animate-fade-in-up" style="animation-delay: 0.5s">
+          <mat-icon class="text-4xl mb-4 text-blue-400">favorite</mat-icon>
+          <h3 class="text-xl font-bold text-white mb-2">Compassion</h3>
+          <p class="text-gray-300">Every client's story matters to us</p>
+        </div>
+        <div class="mission-card animate-fade-in-up" style="animation-delay: 0.7s">
+          <mat-icon class="text-4xl mb-4 text-green-400">shield</mat-icon>
+          <h3 class="text-xl font-bold text-white mb-2">Integrity</h3>
+          <p class="text-gray-300">Transparent and ethical practices</p>
+        </div>
+        <div class="mission-card animate-fade-in-up" style="animation-delay: 0.9s">
+          <mat-icon class="text-4xl mb-4 text-purple-400">emoji_events</mat-icon>
+          <h3 class="text-xl font-bold text-white mb-2">Excellence</h3>
+          <p class="text-gray-300">Uncompromising quality in service</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us with 3D Cards -->
+<section class="py-24 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black text-center mb-16 text-gray-800">
+      Why <span class="gradient-text">Choose Us?</span>
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="feature-card card-3d group">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon bg-gradient-to-br from-blue-400 to-blue-600">
+            <mat-icon>verified_user</mat-icon>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-gray-800">Expert Lawyers</h3>
+        <p class="text-gray-600 leading-relaxed">Seasoned professionals with proven track records in debt settlement and financial law.</p>
+        <div class="feature-arrow">
+          <mat-icon>arrow_forward</mat-icon>
+        </div>
+      </div>
+      
+      <div class="feature-card card-3d group">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon bg-gradient-to-br from-green-400 to-green-600">
+            <mat-icon>lock</mat-icon>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-gray-800">100% Secure</h3>
+        <p class="text-gray-600 leading-relaxed">Your privacy and confidentiality are our top priorities with bank-level security.</p>
+        <div class="feature-arrow">
+          <mat-icon>arrow_forward</mat-icon>
+        </div>
+      </div>
+      
+      <div class="feature-card card-3d group">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon bg-gradient-to-br from-purple-400 to-purple-600">
+            <mat-icon>money_off</mat-icon>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-gray-800">No Upfront Fees</h3>
+        <p class="text-gray-600 leading-relaxed">Pay only when we succeed. No hidden costs, no surprises, complete transparency.</p>
+        <div class="feature-arrow">
+          <mat-icon>arrow_forward</mat-icon>
+        </div>
+      </div>
+      
+      <div class="feature-card card-3d group">
+        <div class="feature-icon-wrapper">
+          <div class="feature-icon bg-gradient-to-br from-orange-400 to-orange-600">
+            <mat-icon>emoji_events</mat-icon>
+          </div>
+        </div>
+        <h3 class="text-xl font-bold mb-4 text-gray-800">Proven Results</h3>
+        <p class="text-gray-600 leading-relaxed">Over 1000+ successful cases with an average 60% debt reduction for our clients.</p>
+        <div class="feature-arrow">
+          <mat-icon>arrow_forward</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works with Timeline Animation -->
+<section class="py-24 bg-white relative overflow-hidden">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black text-center mb-20 text-gray-800">
+      How It <span class="gradient-text">Works</span>
+    </h2>
+    
+    <div class="relative">
+      <!-- Timeline Line -->
+      <div class="timeline-line"></div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="timeline-item" data-step="1">
+          <div class="timeline-dot">
+            <mat-icon>assignment</mat-icon>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Free Consultation</h3>
+            <p class="text-gray-600 mb-6">Share your debt situation with our experts. We'll analyze your case and provide a clear roadmap to freedom.</p>
+            <div class="timeline-features">
+              <div class="timeline-feature">✓ 30-minute consultation</div>
+              <div class="timeline-feature">✓ Debt analysis report</div>
+              <div class="timeline-feature">✓ Personalized strategy</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-step="2">
+          <div class="timeline-dot">
+            <mat-icon>handshake</mat-icon>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Expert Negotiation</h3>
+            <p class="text-gray-600 mb-6">Our legal team negotiates directly with creditors to secure the best possible settlement terms.</p>
+            <div class="timeline-features">
+              <div class="timeline-feature">✓ Professional representation</div>
+              <div class="timeline-feature">✓ Harassment protection</div>
+              <div class="timeline-feature">✓ Regular updates</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="timeline-item" data-step="3">
+          <div class="timeline-dot">
+            <mat-icon>celebration</mat-icon>
+          </div>
+          <div class="timeline-content">
+            <h3 class="text-2xl font-bold mb-4 text-gray-800">Financial Freedom</h3>
+            <p class="text-gray-600 mb-6">Settle your debt for a fraction of the original amount and start rebuilding your financial future.</p>
+            <div class="timeline-features">
+              <div class="timeline-feature">✓ 40-70% debt reduction</div>
+              <div class="timeline-feature">✓ Legal documentation</div>
+              <div class="timeline-feature">✓ CIBIL improvement guidance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Success Stories with Modern Cards -->
+<section class="py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black text-center mb-20 text-gray-800">
+      Success <span class="gradient-text">Stories</span>
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="success-card hover-lift">
+        <div class="success-header">
+          <div class="star-rating">
+            <mat-icon *ngFor="let star of [1,2,3,4,5]" class="text-yellow-400">star</mat-icon>
+          </div>
+          <h3 class="success-title">₹8L Debt → ₹3L Settlement</h3>
+        </div>
+        <p class="success-quote">"KarzaMaaf saved my business and my family. The harassment stopped immediately, and I settled for just 37% of my original debt."</p>
+        <div class="success-author">
+          <img src="https://i.pravatar.cc/60?img=68" alt="Rajesh" class="author-avatar">
+          <div>
+            <p class="author-name">Rajesh Kumar</p>
+            <p class="author-location">Mumbai, Maharashtra</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="success-card hover-lift">
+        <div class="success-header">
+          <div class="star-rating">
+            <mat-icon *ngFor="let star of [1,2,3,4,5]" class="text-yellow-400">star</mat-icon>
+          </div>
+          <h3 class="success-title">Credit Card Freedom</h3>
+        </div>
+        <p class="success-quote">"Multiple credit card debts were overwhelming me. Now I'm debt-free and my CIBIL score has improved by 200 points!"</p>
+        <div class="success-author">
+          <img src="https://i.pravatar.cc/60?img=69" alt="Priya" class="author-avatar">
+          <div>
+            <p class="author-name">Priya Sharma</p>
+            <p class="author-location">Delhi, India</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="success-card hover-lift">
+        <div class="success-header">
+          <div class="star-rating">
+            <mat-icon *ngFor="let star of [1,2,3,4,5]" class="text-yellow-400">star</mat-icon>
+          </div>
+          <h3 class="success-title">Personal Loan Settled</h3>
+        </div>
+        <p class="success-quote">"Professional, transparent, and effective. They turned my financial nightmare into a success story. Highly recommended!"</p>
+        <div class="success-author">
+          <img src="https://i.pravatar.cc/60?img=70" alt="Amit" class="author-avatar">
+          <div>
+            <p class="author-name">Amit Patel</p>
+            <p class="author-location">Bangalore, Karnataka</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ with Animated Accordion -->
+<section class="py-24 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-black text-center mb-20 text-gray-800">
+      Frequently Asked <span class="gradient-text">Questions</span>
+    </h2>
+    
+    <div class="max-w-4xl mx-auto">
+      <div class="faq-container">
+        <div class="faq-item" [class.active]="openFaq === 0">
+          <button class="faq-question" (click)="toggleFaq(0)">
+            <span>How much can you reduce my debt?</span>
+            <mat-icon class="faq-icon">{{ openFaq === 0 ? 'remove' : 'add' }}</mat-icon>
+          </button>
+          <div class="faq-answer" [class.open]="openFaq === 0">
+            <p>We typically achieve 40-70% debt reduction for our clients. The exact amount depends on your specific situation, creditor policies, and negotiation outcomes. Our expert team works tirelessly to secure the best possible terms for you.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item" [class.active]="openFaq === 1">
+          <button class="faq-question" (click)="toggleFaq(1)">
+            <span>Will this affect my credit score?</span>
+            <mat-icon class="faq-icon">{{ openFaq === 1 ? 'remove' : 'add' }}</mat-icon>
+          </button>
+          <div class="faq-answer" [class.open]="openFaq === 1">
+            <p>Debt settlement may initially impact your credit score, but we provide comprehensive guidance on rebuilding your credit afterward. Many clients see significant improvement within 12-24 months, often achieving better scores than before.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item" [class.active]="openFaq === 2">
+          <button class="faq-question" (click)="toggleFaq(2)">
+            <span>How long does the process take?</span>
+            <mat-icon class="faq-icon">{{ openFaq === 2 ? 'remove' : 'add' }}</mat-icon>
+          </button>
+          <div class="faq-answer" [class.open]="openFaq === 2">
+            <p>Most cases are resolved within 6-24 months, depending on the complexity and number of creditors involved. We maintain transparent communication and keep you updated throughout the entire process.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item" [class.active]="openFaq === 3">
+          <button class="faq-question" (click)="toggleFaq(3)">
+            <span>What are your fees?</span>
+            <mat-icon class="faq-icon">{{ openFaq === 3 ? 'remove' : 'add' }}</mat-icon>
+          </button>
+          <div class="faq-answer" [class.open]="openFaq === 3">
+            <p>We work on a performance-based fee structure. You only pay when we successfully settle your debt. No upfront fees, no hidden costs, complete transparency. Our success is directly tied to your success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Carousel with Modern Design -->
+<section class="py-24 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600"></div>
+  <div class="absolute inset-0 bg-black/20"></div>
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <h2 class="text-4xl md:text-5xl font-black text-center mb-20 text-white">
+      Client <span class="text-yellow-300">Testimonials</span>
+    </h2>
+    
+    <div class="testimonial-carousel max-w-4xl mx-auto relative">
+      <div class="testimonial-track" [style.transform]="'translateX(-' + (currentTestimonialIndex * 100) + '%)'">
+        <div *ngFor="let testimonial of testimonials; let i = index" class="testimonial-slide">
+          <div class="testimonial-content glass-card">
+            <div class="testimonial-quote-icon">
+              <mat-icon>format_quote</mat-icon>
+            </div>
+            <p class="testimonial-text">{{ testimonial.quote }}</p>
+            <div class="testimonial-author-info">
+              <img [src]="'https://i.pravatar.cc/80?u=' + i" [alt]="testimonial.author" class="testimonial-avatar">
+              <div>
+                <p class="testimonial-author">{{ testimonial.author }}</p>
+                <div class="testimonial-rating">
+                  <mat-icon *ngFor="let star of [1,2,3,4,5]" class="text-yellow-400">star</mat-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button (click)="prevTestimonial()" class="testimonial-nav testimonial-prev">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <button (click)="nextTestimonial()" class="testimonial-nav testimonial-next">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+      
+      <div class="testimonial-dots">
+        <button *ngFor="let testimonial of testimonials; let i = index" 
+                (click)="goToTestimonial(i)"
+                class="testimonial-dot"
+                [class.active]="i === currentTestimonialIndex">
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA with Urgency -->
+<section class="py-24 relative overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900"></div>
+  <div class="floating-elements">
+    <div class="floating-circle circle-1"></div>
+    <div class="floating-circle circle-2"></div>
+  </div>
+  
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl md:text-6xl font-black text-white mb-8">
+        Your <span class="gradient-text">Freedom</span> Awaits
+      </h2>
+      <p class="text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed">
+        Every day you wait is another day of stress and uncertainty. Take control of your financial future today with our expert legal team.
+      </p>
+      
+      <!-- Urgency Indicators -->
+      <div class="flex flex-wrap justify-center gap-6 mb-12">
+        <div class="urgency-badge">
+          <mat-icon class="text-green-400">schedule</mat-icon>
+          <span>Free Consultation Today</span>
+        </div>
+        <div class="urgency-badge">
+          <mat-icon class="text-blue-400">security</mat-icon>
+          <span>100% Confidential</span>
+        </div>
+        <div class="urgency-badge">
+          <mat-icon class="text-purple-400">flash_on</mat-icon>
+          <span>Quick Response</span>
+        </div>
+      </div>
+      
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a routerLink="/contact" class="cta-primary group">
+          <span class="relative z-10 flex items-center">
+            <mat-icon class="mr-2">chat</mat-icon>
+            Start Your Journey Today
+          </span>
+          <div class="cta-bg"></div>
+        </a>
+        <a href="tel:+1234567890" class="cta-secondary group">
+          <mat-icon class="mr-2">phone</mat-icon>
+          <span>Emergency Call: (123) 456-7890</span>
+        </a>
+      </div>
+      
+      <p class="text-sm text-gray-400 mt-8">
+        ✓ No upfront fees ✓ No obligation ✓ Complete privacy guaranteed
+      </p>
+    </div>
+  </div>
+</section>
