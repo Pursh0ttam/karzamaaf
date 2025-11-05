@@ -1,49 +1,334 @@
-<section id="contact" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-2">Take the First Step Today</h2>
-        <p class="text-center text-gray-600 mb-8">Fill out the form below for a 100% free and confidential case evaluation.</p>
-        <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label for="name" class="block text-gray-700 font-bold mb-2">Full Name</label>
-              <input type="text" name="name" [(ngModel)]="formData.name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-background">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Contact Legal Experts">
+    <div class="hero-overlay"></div>
+    <div class="animated-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge animate-fade-in">
+          <mat-icon class="pulse-icon">support_agent</mat-icon>
+          Free Legal Consultation
+        </span>
+        
+        <h1 class="hero-title animate-slide-up">
+          Get Expert Legal Help<br>
+          <span class="highlight gradient-text">Start Your Case Today</span>
+        </h1>
+        
+        <p class="hero-subtitle animate-slide-up-delay">
+          Free consultation • Expert legal team • 100% confidential • No upfront fees
+        </p>
+        
+        <div class="hero-stats animate-fade-in-up">
+          <div class="stat stat-bounce-1">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+          <div class="stat stat-bounce-2">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Confidential</span>
+          </div>
+          <div class="stat stat-bounce-3">
+            <span class="stat-number">Free</span>
+            <span class="stat-label">Consultation</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-card animate-float">
+        <div class="contact-card glass-effect">
+          <div class="card-header">
+            <mat-icon class="header-icon">flash_on</mat-icon>
+            <h3>Quick Contact</h3>
+          </div>
+          <div class="contact-methods">
+            <div class="contact-item hover-lift">
+              <div class="contact-icon phone-icon">
+                <mat-icon>phone</mat-icon>
+              </div>
+              <div>
+                <span class="contact-label">Call Now</span>
+                <span class="contact-value">(123) 456-7890</span>
+              </div>
             </div>
-            <div>
-              <label for="phone" class="block text-gray-700 font-bold mb-2">Phone Number</label>
-              <input type="tel" name="phone" [(ngModel)]="formData.phone" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <div class="contact-item hover-lift">
+              <div class="contact-icon email-icon">
+                <mat-icon>email</mat-icon>
+              </div>
+              <div>
+                <span class="contact-label">Email Us</span>
+                <span class="contact-value">help&#64;karzamaaf.com</span>
+              </div>
             </div>
-            <div class="md:col-span-2">
-              <label for="email" class="block text-gray-700 font-bold mb-2">Email Address</label>
-              <input type="email" name="email" [(ngModel)]="formData.email" required email class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-            </div>
-            <div>
-              <label for="loanAmount" class="block text-gray-700 font-bold mb-2">Outstanding Loan Amount</label>
-              <select name="loanAmount" [(ngModel)]="formData.loanAmount" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="" disabled>Select Amount</option>
-                <option value="<50k">&lt; $50,000</option>
-                <option value="50k-100k">$50,000 - $100,000</option>
-                <option value=">100k">&gt; $100,000</option>
-              </select>
-            </div>
-            <div>
-              <label for="loanType" class="block text-gray-700 font-bold mb-2">Type of Loan</label>
-              <select name="loanType" [(ngModel)]="formData.loanType" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option value="" disabled>Select Type</option>
-                <option value="Personal">Personal Loan</option>
-                <option value="Credit Card">Credit Card</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="md:col-span-2">
-              <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
-              <textarea name="message" [(ngModel)]="formData.message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <div class="contact-item hover-lift">
+              <div class="contact-icon time-icon">
+                <mat-icon>schedule</mat-icon>
+              </div>
+              <div>
+                <span class="contact-label">Response Time</span>
+                <span class="contact-value">Within 1 Hour</span>
+              </div>
             </div>
           </div>
-          <div class="text-center mt-8">
-            <button type="submit" [disabled]="!contactForm.form.valid" class="bg-blue-600 text-white font-bold py-3 px-10 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 transition-colors shadow-lg">Send My Request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-form-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get Your Free Legal Consultation</h2>
+      <p>Fill out the form below and our legal experts will contact you within 1 hour</p>
+    </div>
+    
+    <div class="form-container">
+      <div class="form-content">
+        <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="contact-form">
+          <div class="form-grid">
+            <div class="input-group">
+              <label for="name">Full Name *</label>
+              <input 
+                type="text" 
+                id="name"
+                name="name" 
+                [(ngModel)]="formData.name" 
+                required 
+                placeholder="Enter your full name">
+            </div>
+            
+            <div class="input-group">
+              <label for="phone">Phone Number *</label>
+              <input 
+                type="tel" 
+                id="phone"
+                name="phone" 
+                [(ngModel)]="formData.phone" 
+                required 
+                placeholder="Enter your phone number">
+            </div>
+            
+            <div class="input-group full-width">
+              <label for="email">Email Address *</label>
+              <input 
+                type="email" 
+                id="email"
+                name="email" 
+                [(ngModel)]="formData.email" 
+                required 
+                email 
+                placeholder="Enter your email address">
+            </div>
+            
+            <div class="input-group">
+              <label for="city">City</label>
+              <input 
+                type="text" 
+                id="city"
+                name="city" 
+                [(ngModel)]="formData.city" 
+                placeholder="Enter your city">
+            </div>
+            
+            <div class="input-group">
+              <label for="loanType">Legal Service Needed</label>
+              <select name="loanType" id="loanType" [(ngModel)]="formData.loanType">
+                <option value="">Select Service</option>
+                <option value="Personal Loan Settlement">Personal Loan Settlement</option>
+                <option value="Credit Card Settlement">Credit Card Settlement</option>
+                <option value="Anti-Harassment">Anti-Harassment Legal Services</option>
+                <option value="NBFC Services">NBFC Legal Services</option>
+                <option value="CIBIL Improvement">CIBIL Improvement</option>
+                <option value="Litigation">Legal Litigation</option>
+                <option value="Other">Other Legal Services</option>
+              </select>
+            </div>
+            
+            <div class="input-group">
+              <label for="loanAmount">Outstanding Amount (if applicable)</label>
+              <select name="loanAmount" id="loanAmount" [(ngModel)]="formData.loanAmount">
+                <option value="">Select Amount Range</option>
+                <option value="<1L">Less than ₹1 Lakh</option>
+                <option value="1L-5L">₹1 Lakh - ₹5 Lakh</option>
+                <option value="5L-10L">₹5 Lakh - ₹10 Lakh</option>
+                <option value="10L-25L">₹10 Lakh - ₹25 Lakh</option>
+                <option value=">25L">More than ₹25 Lakh</option>
+              </select>
+            </div>
+            
+            <div class="input-group full-width">
+              <label for="message">Describe Your Situation</label>
+              <textarea 
+                name="message" 
+                id="message"
+                [(ngModel)]="formData.message" 
+                rows="4" 
+                placeholder="Please describe your legal situation in detail..."></textarea>
+            </div>
+          </div>
+          
+          <div class="form-submit">
+            <button 
+              type="submit" 
+              [disabled]="!contactForm.form.valid" 
+              class="submit-btn">
+              <mat-icon>send</mat-icon>
+              Get Free Legal Consultation
+            </button>
+            
+            <p class="form-disclaimer">
+              ✓ 100% Free Consultation ✓ No Upfront Fees ✓ Complete Confidentiality
+            </p>
           </div>
         </form>
-        <div *ngIf="successMessage" class="mt-6 max-w-2xl mx-auto text-center bg-green-100 text-green-700 p-4 rounded-lg">{{ successMessage }}</div>
-        <div *ngIf="errorMessage" class="mt-6 max-w-2xl mx-auto text-center bg-red-100 text-red-700 p-4 rounded-lg">{{ errorMessage }}</div>
       </div>
-    </section>
+      
+      <div class="form-sidebar">
+        <div class="sidebar-card">
+          <h3>Why Choose Us?</h3>
+          <div class="benefits-list">
+            <div class="benefit-item">
+              <mat-icon>verified</mat-icon>
+              <span>Expert Legal Team</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon>schedule</mat-icon>
+              <span>Quick Response</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon>security</mat-icon>
+              <span>100% Confidential</span>
+            </div>
+            <div class="benefit-item">
+              <mat-icon>money_off</mat-icon>
+              <span>No Upfront Fees</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="sidebar-card">
+          <h3>Success Stories</h3>
+          <div class="success-stats">
+            <div class="success-stat">
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">Cases Resolved</span>
+            </div>
+            <div class="success-stat">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">Success Rate</span>
+            </div>
+            <div class="success-stat">
+              <span class="stat-number">₹500Cr+</span>
+              <span class="stat-label">Amount Settled</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Success/Error Messages -->
+    <div *ngIf="successMessage" class="message success-message">
+      <mat-icon>check_circle</mat-icon>
+      <span>{{ successMessage }}</span>
+    </div>
+    
+    <div *ngIf="errorMessage" class="message error-message">
+      <mat-icon>error</mat-icon>
+      <span>{{ errorMessage }}</span>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p>Multiple ways to reach our legal experts</p>
+    </div>
+    
+    <div class="contact-info-grid">
+      <div class="info-card">
+        <div class="info-icon phone">
+          <mat-icon>phone</mat-icon>
+        </div>
+        <h3>Call Us</h3>
+        <p>Speak directly with our legal experts</p>
+        <a href="tel:+1234567890" class="info-link">(123) 456-7890</a>
+        <span class="info-note">Available 24/7</span>
+      </div>
+      
+      <div class="info-card">
+        <div class="info-icon email">
+          <mat-icon>email</mat-icon>
+        </div>
+        <h3>Email Us</h3>
+        <p>Send us your legal queries</p>
+        <a href="mailto:help&#64;karzamaaf.com" class="info-link">help&#64;karzamaaf.com</a>
+        <span class="info-note">Response within 1 hour</span>
+      </div>
+      
+      <div class="info-card">
+        <div class="info-icon location">
+          <mat-icon>location_on</mat-icon>
+        </div>
+        <h3>Visit Us</h3>
+        <p>Meet our legal team in person</p>
+        <address class="info-link">
+          123 Legal Street<br>
+          Mumbai, Maharashtra 400001
+        </address>
+        <span class="info-note">Mon-Sat: 9 AM - 7 PM</span>
+      </div>
+      
+      <div class="info-card video-consultation">
+        <div class="info-icon chat">
+          <mat-icon>video_call</mat-icon>
+        </div>
+        <h3>Free Video Consultation</h3>
+        <p>10-minute free consultation on Zoom/Google Meet</p>
+        
+        <div class="consultation-booking">
+          <div class="booking-form">
+            <label for="consultationDate">Select Date & Time:</label>
+            <input 
+              type="datetime-local" 
+              id="consultationDate"
+              [(ngModel)]="consultationDate"
+              [min]="minDate"
+              class="date-input">
+            
+            <label for="platform">Preferred Platform:</label>
+            <select id="platform" [(ngModel)]="selectedPlatform" class="platform-select">
+              <option value="zoom">Zoom</option>
+              <option value="google-meet">Google Meet</option>
+            </select>
+            
+            <button 
+              class="book-consultation-btn" 
+              (click)="bookConsultation()"
+              [disabled]="!consultationDate">
+              Book Free 10-Min Call
+            </button>
+          </div>
+          
+          <div class="consultation-note">
+            <mat-icon>info</mat-icon>
+            <span>First 10 minutes FREE. Extended consultations charged at ₹500/hour</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

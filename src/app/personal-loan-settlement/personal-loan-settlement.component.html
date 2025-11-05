@@ -1,278 +1,71 @@
-<!-- Personal Loan Settlement Page - Modern Design -->
-
-<!-- Hero Section with Glassmorphism -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Animated Background -->
-  <div class="absolute inset-0 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <!-- Floating Elements -->
-    <div class="floating-elements">
-      <div class="floating-circle circle-1"></div>
-      <div class="floating-circle circle-2"></div>
-      <div class="floating-circle circle-3"></div>
-      <div class="floating-circle circle-4"></div>
-    </div>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-background">
+    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Personal Loan Settlement">
+    <div class="hero-overlay"></div>
   </div>
   
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-      
-      <!-- Left Column - Main Content -->
-      <div class="lg:col-span-7 text-center lg:text-left">
-        <!-- Badge -->
-        <div class="mb-6 animate-fade-in-up" style="animation-delay: 0.2s">
-          <span class="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold">
-            <mat-icon class="text-green-400 mr-2">account_balance</mat-icon>
-            Personal Loan Settlement Experts
-          </span>
-        </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-badge">
+          <mat-icon>verified</mat-icon>
+          Trusted by 10,000+ Clients
+        </span>
         
-        <!-- Main Headline -->
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 animate-fade-in-up" style="animation-delay: 0.4s">
-          <span class="gradient-text">Settle Your</span><br>
-          <span class="text-white">Personal Loan</span><br>
-          <span class="gradient-text">For Less</span>
+        <h1 class="hero-title">
+          Settle Your Personal Loan<br>
+          <span class="highlight">Save Up to 70%</span>
         </h1>
         
-        <!-- Subtitle -->
-        <p class="text-lg md:text-xl text-gray-200 mb-8 animate-fade-in-up" style="animation-delay: 0.6s">
-          Professional negotiation • Debt reduction up to 70% • No upfront fees • Legal protection
+        <p class="hero-subtitle">
+          Expert legal team • Stop harassment • Rebuild credit • No upfront fees
         </p>
         
-        <!-- Key Stats -->
-        <div class="grid grid-cols-3 gap-4 mb-8 animate-fade-in-up" style="animation-delay: 0.8s">
-          <div class="stat-mini">
-            <div class="stat-number-mini">60-70%</div>
-            <div class="stat-label-mini">Avg. Reduction</div>
-          </div>
-          <div class="stat-mini">
-            <div class="stat-number-mini">3-6</div>
-            <div class="stat-label-mini">Months Process</div>
-          </div>
-          <div class="stat-mini">
-            <div class="stat-number-mini">500+</div>
-            <div class="stat-label-mini">Loans Settled</div>
-          </div>
-        </div>
-        
-        <!-- CTA Buttons -->
-        <div class="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style="animation-delay: 1s">
-          <a routerLink="/contact" class="btn-primary group">
-            <span class="relative z-10">Start Free Consultation</span>
-            <div class="btn-bg"></div>
-          </a>
-          <a href="#calculator" class="btn-secondary group">
-            <mat-icon class="mr-2">calculate</mat-icon>
-            <span>Settlement Calculator</span>
+        <div class="hero-buttons">
+          <button (click)="scrollToCalculator()" class="btn-primary">
+            <mat-icon>calculate</mat-icon>
+            Calculate Savings
+          </button>
+          <a href="tel:+1234567890" class="btn-secondary">
+            <mat-icon>phone</mat-icon>
+            Call Now
           </a>
         </div>
-      </div>
-
-      <!-- Right Column - Visual Elements -->
-      <div class="lg:col-span-5 animate-fade-in-up" style="animation-delay: 1.2s">
-        <div class="hero-visual-container">
-          <div class="settlement-preview-card">
-            <div class="settlement-before-after">
-              <div class="debt-comparison">
-                <div class="debt-item before">
-                  <span class="debt-label">Original Debt</span>
-                  <span class="debt-amount strike">₹10,00,000</span>
-                </div>
-                <div class="arrow-down">
-                  <mat-icon>trending_down</mat-icon>
-                </div>
-                <div class="debt-item after">
-                  <span class="debt-label">Settlement Amount</span>
-                  <span class="debt-amount success">₹3,50,000</span>
-                </div>
-                <div class="savings-highlight">
-                  <span class="savings-text">You Save: ₹6,50,000</span>
-                  <span class="savings-percent">65% Reduction!</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- What is Personal Loan Settlement - Blog Style -->
-<section class="py-24 bg-white relative overflow-hidden">
-  <div class="container mx-auto px-6">
-    <div class="max-w-4xl mx-auto">
-      <!-- Blog Header -->
-      <div class="text-center mb-16">
-        <div class="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-semibold mb-4">
-          <mat-icon class="mr-2 text-base">info</mat-icon>
-          Understanding the Process
-        </div>
-        <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
-          What is Personal Loan <span class="gradient-text">Settlement?</span>
-        </h2>
-        <p class="text-xl text-gray-600 leading-relaxed">
-          A strategic financial solution that can reduce your debt burden by 40-70% through professional negotiation
-        </p>
-      </div>
-
-      <!-- Blog Content with Images -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-        <div class="blog-content">
-          <div class="prose-content">
-            <h3 class="text-2xl font-bold text-gray-800 mb-4">The Smart Alternative to Bankruptcy</h3>
-            <p class="text-gray-600 leading-relaxed mb-6">
-              Personal loan settlement is a negotiated agreement where your lender accepts a reduced payment to close your outstanding debt. Instead of paying the full amount, you can settle for significantly less - often saving thousands of rupees.
-            </p>
-            <div class="highlight-box">
-              <mat-icon class="text-green-500">lightbulb</mat-icon>
-              <p class="text-sm text-gray-700 ml-3">
-                <strong>Pro Tip:</strong> Settlement works best when you're experiencing genuine financial hardship and can make a lump-sum payment.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="blog-image">
-          <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80" alt="Financial planning" class="rounded-2xl shadow-2xl">
-            <div class="image-overlay">
-              <div class="success-badge">
-                <mat-icon>check_circle</mat-icon>
-                <span>Legal & Secure Process</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Key Benefits Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div class="benefit-card">
-          <div class="benefit-icon bg-gradient-to-br from-green-400 to-green-600">
-            <mat-icon>savings</mat-icon>
-          </div>
-          <h4 class="text-xl font-bold text-gray-800 mb-3">Massive Savings</h4>
-          <p class="text-gray-600">Save 40-70% of your original debt amount through expert negotiation.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon bg-gradient-to-br from-blue-400 to-blue-600">
-            <mat-icon>schedule</mat-icon>
-          </div>
-          <h4 class="text-xl font-bold text-gray-800 mb-3">Quick Resolution</h4>
-          <p class="text-gray-600">Resolve your debt in 3-6 months instead of years of payments.</p>
-        </div>
-        <div class="benefit-card">
-          <div class="benefit-icon bg-gradient-to-br from-purple-400 to-purple-600">
-            <mat-icon>shield</mat-icon>
-          </div>
-          <h4 class="text-xl font-bold text-gray-800 mb-3">Legal Protection</h4>
-          <p class="text-gray-600">Stop harassment calls and get legal documentation for closure.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- How It Works - Interactive Timeline -->
-<section class="py-24 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
-        How Personal Loan <span class="gradient-text">Settlement Works</span>
-      </h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Our proven 6-step process has helped thousands of clients achieve financial freedom
-      </p>
-    </div>
-
-    <!-- Interactive Timeline -->
-    <div class="relative max-w-6xl mx-auto">
-      <div class="timeline-container">
-        <!-- Timeline Line -->
-        <div class="timeline-line-horizontal"></div>
         
-        <!-- Step 1 -->
-        <div class="timeline-step" data-step="1">
-          <div class="step-content">
-            <div class="step-number">1</div>
-            <div class="step-details">
-              <h3 class="step-title">Free Assessment</h3>
-              <p class="step-description">We analyze your financial situation, debt amount, and negotiation potential.</p>
-              <div class="step-image">
-                <!-- <img src="https://images.unsplash.com/photo-1554224154-26032fced8bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Financial Assessment"> -->
-                <img src="https://via.placeholder.com/300x200/4F46E5/FFFFFF?text=Financial+Assessment" alt="Financial Assessment">
-              </div>
-            </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">₹500Cr+</span>
+            <span class="stat-label">Settled</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Rating</span>
           </div>
         </div>
-
-        <!-- Step 2 -->
-        <div class="timeline-step" data-step="2">
-          <div class="step-content">
-            <div class="step-number">2</div>
-            <div class="step-details">
-              <h3 class="step-title">Strategy Development</h3>
-              <p class="step-description">We create a personalized settlement strategy based on your unique circumstances.</p>
-              <div class="step-image">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Strategy Planning">
-              </div>
+      </div>
+      
+      <div class="hero-card">
+        <div class="settlement-card">
+          <h3>Settlement Example</h3>
+          <div class="amount-comparison">
+            <div class="amount-before">
+              <span class="label">Original Loan</span>
+              <span class="value">₹10,00,000</span>
+            </div>
+            <mat-icon class="arrow">arrow_downward</mat-icon>
+            <div class="amount-after">
+              <span class="label">Settlement</span>
+              <span class="value">₹3,50,000</span>
             </div>
           </div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="timeline-step" data-step="3">
-          <div class="step-content">
-            <div class="step-number">3</div>
-            <div class="step-details">
-              <h3 class="step-title">Professional Negotiation</h3>
-              <p class="step-description">Our expert negotiators communicate with lenders to secure the best settlement terms.</p>
-              <div class="step-image">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Negotiation">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="timeline-step" data-step="4">
-          <div class="step-content">
-            <div class="step-number">4</div>
-            <div class="step-details">
-              <h3 class="step-title">Legal Documentation</h3>
-              <p class="step-description">We ensure all settlement terms are properly documented and legally binding.</p>
-              <div class="step-image">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Legal Documentation">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="timeline-step" data-step="5">
-          <div class="step-content">
-            <div class="step-number">5</div>
-            <div class="step-details">
-              <h3 class="step-title">Settlement Payment</h3>
-              <p class="step-description">You make the agreed settlement payment and we handle all communication with lenders.</p>
-              <div class="step-image">
-                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Payment">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Step 6 -->
-        <div class="timeline-step" data-step="6">
-          <div class="step-content">
-            <div class="step-number">6</div>
-            <div class="step-details">
-              <h3 class="step-title">Debt Freedom</h3>
-              <p class="step-description">Your debt is officially closed and you receive completion certificates for your records.</p>
-              <div class="step-image">
-                <img src="https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Freedom">
-              </div>
-            </div>
+          <div class="savings">
+            <span class="savings-text">You Save ₹6,50,000</span>
+            <span class="savings-percent">65% Reduction</span>
           </div>
         </div>
       </div>
@@ -280,198 +73,229 @@
   </div>
 </section>
 
-<!-- Settlement Calculator Section -->
-<section id="calculator" class="py-24 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
-        Calculate Your <span class="gradient-text">Settlement Savings</span>
-      </h2>
-      <p class="text-xl text-gray-600 mb-12">
-        See how much you could save with our personal loan settlement service
-      </p>
+<!-- How Personal Loan Settlement Works -->
+<section class="content-section">
+  <div class="content-background">
+    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Financial Planning">
+    <div class="content-overlay"></div>
+  </div>
+  
+  <div class="container">
+    <div class="section-header">
+      <h2>How Personal Loan Settlement Works</h2>
+      <p>Understanding the complete process of personal loan settlement</p>
+    </div>
+    
+    <div class="content-text">
+      <p>Personal loan settlement is a strategic debt resolution process that allows borrowers to negotiate with lenders to pay a significantly reduced amount instead of the full outstanding debt. Our expert legal team begins by conducting a comprehensive analysis of your financial situation, including your income, expenses, assets, and total debt amount. This detailed assessment helps us understand your capacity to pay and develop a realistic settlement strategy tailored to your specific circumstances.</p>
+      
+      <p>Our skilled negotiators then contact your lender directly, presenting a compelling case for settlement based on your financial hardship. We leverage our extensive knowledge of banking regulations and years of experience to secure substantial debt reductions of 40-70% while immediately stopping harassment calls and legal notices. The negotiation process involves multiple discussions with the lender's recovery team, where we demonstrate why a settlement benefits both parties.</p>
+      
+      <p>Once settlement terms are agreed upon, we ensure proper legal documentation and closure. You pay the reduced amount as a lump sum, receive written confirmation that your debt is fully satisfied, and get complete protection from future collection attempts. Our transparent, performance-based fee structure means you only pay after successful settlement, with no upfront costs. The entire process typically takes 3-6 months, during which we handle all communication and paperwork, allowing you to focus on rebuilding your financial stability.</p>
+    </div>
+  </div>
+</section>
 
-      <!-- Calculator Card -->
-      <div class="calculator-card">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Input Section -->
-          <div class="calculator-inputs">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">Enter Your Details</h3>
-            
-            <div class="input-group">
-              <label class="input-label">Current Loan Amount (₹)</label>
-              <input type="number" [(ngModel)]="loanAmount" (input)="calculateSavings()" 
-                     class="calculator-input" placeholder="e.g., 500000">
-            </div>
-
-            <div class="input-group">
-              <label class="input-label">Monthly EMI (₹)</label>
-              <input type="number" [(ngModel)]="monthlyEMI" (input)="calculateSavings()" 
-                     class="calculator-input" placeholder="e.g., 15000">
-            </div>
-
-            <div class="input-group">
-              <label class="input-label">Months Behind Payment</label>
-              <select [(ngModel)]="monthsBehind" (change)="calculateSavings()" class="calculator-input">
-                <option value="3">3 months</option>
-                <option value="6">6 months</option>
-                <option value="12">12 months</option>
-                <option value="24">24+ months</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Results Section -->
-          <div class="calculator-results">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6">Your Potential Savings</h3>
-            
-            <div class="results-display">
-              <div class="result-item">
-                <span class="result-label">Original Debt</span>
-                <span class="result-value original">₹{{ loanAmount | number }}</span>
-              </div>
-              
-              <div class="result-item">
-                <span class="result-label">Estimated Settlement</span>
-                <span class="result-value settlement">₹{{ settlementAmount | number }}</span>
-              </div>
-              
-              <div class="result-item highlight">
-                <span class="result-label">Your Savings</span>
-                <span class="result-value savings">₹{{ savingsAmount | number }}</span>
-              </div>
-              
-              <div class="savings-percentage">
-                <span class="percentage-text">{{ savingsPercentage }}% Reduction</span>
-              </div>
-            </div>
-
-            <button (click)="startConsultation()" class="calculator-cta">
-              <span>Get Free Consultation</span>
-              <mat-icon>arrow_forward</mat-icon>
-            </button>
-          </div>
+<!-- Benefits Section -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why Choose Our Personal Loan Settlement?</h2>
+      <p>Professional debt settlement with guaranteed results</p>
+    </div>
+    
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon green">
+          <mat-icon>savings</mat-icon>
         </div>
+        <h3>Save 40-70%</h3>
+        <p>Reduce your personal loan debt significantly through expert negotiation</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon blue">
+          <mat-icon>gavel</mat-icon>
+        </div>
+        <h3>Legal Protection</h3>
+        <p>Expert legal team handles all communications and stops harassment</p>
+      </div>
+      
+      <!-- <div class="benefit-card">
+        <div class="benefit-icon purple">
+          <mat-icon>schedule</mat-icon>
+        </div>
+        <h3>Fast Results</h3>
+        <p>Most settlements completed within 3-6 months</p>
+      </div> -->
+      
+      <div class="benefit-card">
+        <div class="benefit-icon orange">
+          <mat-icon>security</mat-icon>
+        </div>
+        <h3>No Upfront Fees</h3>
+        <p>Pay only after successful settlement completion</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Calculator Section -->
+<section id="calculator" class="calculator-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Calculate Your Personal Loan Savings</h2>
+      <p>See exactly how much you could save</p>
+    </div>
+    
+    <div class="calculator-container">
+      <div class="calculator-inputs">
+        <h3>Your Loan Details</h3>
+        
+        <div class="input-group">
+          <label>Total Loan Amount (₹)</label>
+          <input type="number" [(ngModel)]="loanAmount" (input)="calculateSavings()" 
+                 placeholder="Enter loan amount">
+        </div>
+        
+        <div class="input-group">
+          <label>Monthly EMI (₹)</label>
+          <input type="number" [(ngModel)]="monthlyEMI" (input)="calculateSavings()" 
+                 placeholder="Enter monthly EMI">
+        </div>
+        
+        <div class="input-group">
+          <label>Months Behind</label>
+          <select [(ngModel)]="monthsBehind" (change)="calculateSavings()">
+            <option value="3">3 Months</option>
+            <option value="6">6 Months</option>
+            <option value="12">12 Months</option>
+            <option value="24">24+ Months</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="calculator-results">
+        <h3>Your Savings</h3>
+        
+        <div class="result-item">
+          <span class="label">Original Debt</span>
+          <span class="value original">₹{{ loanAmount | number }}</span>
+        </div>
+        
+        <div class="result-item">
+          <span class="label">Settlement Amount</span>
+          <span class="value settlement">₹{{ settlementAmount | number }}</span>
+        </div>
+        
+        <div class="result-item highlight">
+          <span class="label">Total Savings</span>
+          <span class="value savings">₹{{ savingsAmount | number }}</span>
+        </div>
+        
+        <div class="savings-percentage">
+          {{ savingsPercentage }}% Reduction
+        </div>
+        
+        <button (click)="startConsultation()" class="btn-cta">
+          <mat-icon>chat</mat-icon>
+          Get Free Consultation
+        </button>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Success Stories -->
-<section class="py-24 bg-gradient-to-br from-blue-50 to-indigo-100">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
-        Real <span class="gradient-text">Success Stories</span>
-      </h2>
-      <p class="text-xl text-gray-600">
-        See how we've helped others achieve financial freedom through personal loan settlement
-      </p>
+<section class="stories-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Real Success Stories</h2>
+      <p>See how we've helped thousands settle their personal loans</p>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Success Story 1 -->
-      <div class="success-story-card">
+    
+    <div class="stories-grid">
+      <div class="story-card">
         <div class="story-header">
           <div class="client-info">
-            <img src="https://i.pravatar.cc/80?img=68" alt="Rajesh Kumar" class="client-avatar">
+            <img src="https://i.pravatar.cc/60?img=68" alt="Rajesh Kumar">
             <div>
-              <h4 class="client-name">Rajesh Kumar</h4>
-              <p class="client-location">Mumbai, Maharashtra</p>
+              <h4>Rajesh Kumar</h4>
+              <p>Mumbai, Maharashtra</p>
             </div>
           </div>
-          <div class="settlement-badge">
-            <span>65% Saved</span>
-          </div>
+          <div class="savings-badge">65% Saved</div>
         </div>
         
-        <div class="story-content">
-          <div class="debt-comparison-mini">
-            <div class="debt-before">₹8,00,000</div>
-            <mat-icon class="arrow">trending_down</mat-icon>
-            <div class="debt-after">₹2,80,000</div>
-          </div>
-          
-          <blockquote class="story-quote">
-            "I was drowning in personal loan debt after my business failed. KarzaMaaf negotiated with my lender and I settled for just 35% of what I owed. Life-changing!"
-          </blockquote>
-          
-          <div class="story-timeline">
-            <span class="timeline-item">
-              <mat-icon>schedule</mat-icon>
-              Settlement completed in 4 months
-            </span>
-          </div>
+        <div class="debt-comparison">
+          <span class="before">₹8,00,000</span>
+          <mat-icon>arrow_forward</mat-icon>
+          <span class="after">₹2,80,000</span>
+        </div>
+        
+        <p class="story-quote">
+          "Business failure left me with crushing debt. KarzaMaaf negotiated and I settled for just 35%. Life-changing!"
+        </p>
+        
+        <div class="story-timeline">
+          <mat-icon>schedule</mat-icon>
+          <span>Settled in 4 months</span>
         </div>
       </div>
-
-      <!-- Success Story 2 -->
-      <div class="success-story-card">
+      
+      <div class="story-card">
         <div class="story-header">
           <div class="client-info">
-            <img src="https://i.pravatar.cc/80?img=69" alt="Priya Sharma" class="client-avatar">
+            <img src="https://i.pravatar.cc/60?img=69" alt="Priya Sharma">
             <div>
-              <h4 class="client-name">Priya Sharma</h4>
-              <p class="client-location">Delhi, India</p>
+              <h4>Priya Sharma</h4>
+              <p>Delhi, India</p>
             </div>
           </div>
-          <div class="settlement-badge">
-            <span>58% Saved</span>
-          </div>
+          <div class="savings-badge">58% Saved</div>
         </div>
         
-        <div class="story-content">
-          <div class="debt-comparison-mini">
-            <div class="debt-before">₹6,50,000</div>
-            <mat-icon class="arrow">trending_down</mat-icon>
-            <div class="debt-after">₹2,73,000</div>
-          </div>
-          
-          <blockquote class="story-quote">
-            "After my divorce, I couldn't manage multiple loan EMIs. The team helped me settle all my personal loans and gave me a fresh start financially."
-          </blockquote>
-          
-          <div class="story-timeline">
-            <span class="timeline-item">
-              <mat-icon>schedule</mat-icon>
-              Settlement completed in 5 months
-            </span>
-          </div>
+        <div class="debt-comparison">
+          <span class="before">₹6,50,000</span>
+          <mat-icon>arrow_forward</mat-icon>
+          <span class="after">₹2,73,000</span>
+        </div>
+        
+        <p class="story-quote">
+          "Multiple EMIs were overwhelming. The team helped settle everything and gave me a fresh start."
+        </p>
+        
+        <div class="story-timeline">
+          <mat-icon>schedule</mat-icon>
+          <span>Settled in 5 months</span>
         </div>
       </div>
-
-      <!-- Success Story 3 -->
-      <div class="success-story-card">
+      
+      <div class="story-card">
         <div class="story-header">
           <div class="client-info">
-            <img src="https://i.pravatar.cc/80?img=70" alt="Amit Patel" class="client-avatar">
+            <img src="https://i.pravatar.cc/60?img=70" alt="Amit Patel">
             <div>
-              <h4 class="client-name">Amit Patel</h4>
-              <p class="client-location">Bangalore, Karnataka</p>
+              <h4>Amit Patel</h4>
+              <p>Bangalore, Karnataka</p>
             </div>
           </div>
-          <div class="settlement-badge">
-            <span>72% Saved</span>
-          </div>
+          <div class="savings-badge">72% Saved</div>
         </div>
         
-        <div class="story-content">
-          <div class="debt-comparison-mini">
-            <div class="debt-before">₹12,00,000</div>
-            <mat-icon class="arrow">trending_down</mat-icon>
-            <div class="debt-after">₹3,36,000</div>
-          </div>
-          
-          <blockquote class="story-quote">
-            "Job loss during COVID left me with no way to pay my loans. The settlement saved me from bankruptcy and I'm now debt-free with good credit rebuilding."
-          </blockquote>
-          
-          <div class="story-timeline">
-            <span class="timeline-item">
-              <mat-icon>schedule</mat-icon>
-              Settlement completed in 6 months
-            </span>
-          </div>
+        <div class="debt-comparison">
+          <span class="before">₹12,00,000</span>
+          <mat-icon>arrow_forward</mat-icon>
+          <span class="after">₹3,36,000</span>
+        </div>
+        
+        <p class="story-quote">
+          "COVID job loss made payments impossible. Settlement saved me from bankruptcy."
+        </p>
+        
+        <div class="story-timeline">
+          <mat-icon>schedule</mat-icon>
+          <span>Settled in 6 months</span>
         </div>
       </div>
     </div>
@@ -479,109 +303,97 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="py-24 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-black text-gray-800 mb-6">
-          Frequently Asked <span class="gradient-text">Questions</span>
-        </h2>
-        <p class="text-xl text-gray-600">
-          Get answers to common questions about personal loan settlement
-        </p>
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about personal loan settlement</p>
+    </div>
+    
+    <div class="faq-container">
+      <div class="faq-item" [class.active]="openFaq === 0">
+        <button class="faq-question" (click)="toggleFaq(0)">
+          <span>How much can I save on my personal loan?</span>
+          <mat-icon>{{ openFaq === 0 ? 'remove' : 'add' }}</mat-icon>
+        </button>
+        <div class="faq-answer" [class.open]="openFaq === 0">
+          <p>Most clients save 40-70% on their personal loan settlements. The exact amount depends on your financial situation and lender policies.</p>
+        </div>
       </div>
-
-      <div class="faq-container">
-        <div class="faq-item" [class.active]="openFaq === 0">
-          <button class="faq-question" (click)="toggleFaq(0)">
-            <span>How much can I save through personal loan settlement?</span>
-            <mat-icon class="faq-icon">{{ openFaq === 0 ? 'remove' : 'add' }}</mat-icon>
-          </button>
-          <div class="faq-answer" [class.open]="openFaq === 0">
-            <p>Most clients save between 40-70% of their original debt amount. The exact savings depend on your financial situation, the age of the debt, and the lender's policies. Our expert negotiators work to secure the maximum possible reduction for your specific case.</p>
-          </div>
+      
+      <div class="faq-item" [class.active]="openFaq === 1">
+        <button class="faq-question" (click)="toggleFaq(1)">
+          <span>Will settlement affect my credit score?</span>
+          <mat-icon>{{ openFaq === 1 ? 'remove' : 'add' }}</mat-icon>
+        </button>
+        <div class="faq-answer" [class.open]="openFaq === 1">
+          <p>Settlement may initially impact your credit score, but we provide credit rebuilding guidance. Many clients see improvement within 12-24 months.</p>
         </div>
-
-        <div class="faq-item" [class.active]="openFaq === 1">
-          <button class="faq-question" (click)="toggleFaq(1)">
-            <span>Will personal loan settlement affect my credit score?</span>
-            <mat-icon class="faq-icon">{{ openFaq === 1 ? 'remove' : 'add' }}</mat-icon>
-          </button>
-          <div class="faq-answer" [class.open]="openFaq === 1">
-            <p>Settlement may initially impact your credit score, but it's often better than continued missed payments or bankruptcy. We provide guidance on credit rebuilding strategies, and many clients see improvement within 12-24 months post-settlement.</p>
-          </div>
+      </div>
+      
+      <div class="faq-item" [class.active]="openFaq === 2">
+        <button class="faq-question" (click)="toggleFaq(2)">
+          <span>Do I need to pay upfront fees?</span>
+          <mat-icon>{{ openFaq === 2 ? 'remove' : 'add' }}</mat-icon>
+        </button>
+        <div class="faq-answer" [class.open]="openFaq === 2">
+          <p>No upfront fees. We work on performance-based structure - you only pay after successful settlement.</p>
         </div>
-
-        <div class="faq-item" [class.active]="openFaq === 2">
-          <button class="faq-question" (click)="toggleFaq(2)">
-            <span>Do I need to pay upfront fees for settlement services?</span>
-            <mat-icon class="faq-icon">{{ openFaq === 2 ? 'remove' : 'add' }}</mat-icon>
-          </button>
-          <div class="faq-answer" [class.open]="openFaq === 2">
-            <p>No, we operate on a performance-based fee structure. You only pay our fees after we successfully negotiate and close your settlement. There are no upfront costs, ensuring our success is directly tied to yours.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" [class.active]="openFaq === 3">
-          <button class="faq-question" (click)="toggleFaq(3)">
-            <span>How long does the settlement process take?</span>
-            <mat-icon class="faq-icon">{{ openFaq === 3 ? 'remove' : 'add' }}</mat-icon>
-          </button>
-          <div class="faq-answer" [class.open]="openFaq === 3">
-            <p>Most personal loan settlements are completed within 3-6 months. The timeline depends on factors like the number of lenders, debt amount, and negotiation complexity. We keep you updated throughout the entire process.</p>
-          </div>
-        </div>
-
-        <div class="faq-item" [class.active]="openFaq === 4">
-          <button class="faq-question" (click)="toggleFaq(4)">
-            <span>What documents do I need for personal loan settlement?</span>
-            <mat-icon class="faq-icon">{{ openFaq === 4 ? 'remove' : 'add' }}</mat-icon>
-          </button>
-          <div class="faq-answer" [class.open]="openFaq === 4">
-            <p>You'll need loan agreements, recent statements, income proof, bank statements, and documentation of financial hardship (if applicable). Our team will guide you through the complete document checklist during your free consultation.</p>
-          </div>
+      </div>
+      
+      <div class="faq-item" [class.active]="openFaq === 3">
+        <button class="faq-question" (click)="toggleFaq(3)">
+          <span>How long does the process take?</span>
+          <mat-icon>{{ openFaq === 3 ? 'remove' : 'add' }}</mat-icon>
+        </button>
+        <div class="faq-answer" [class.open]="openFaq === 3">
+          <p>Most personal loan settlements are completed within 3-6 months depending on complexity.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Final CTA -->
-<section class="py-24 relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900"></div>
-  <div class="floating-elements">
-    <div class="floating-circle circle-1"></div>
-    <div class="floating-circle circle-2"></div>
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-background">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Financial Freedom">
+    <div class="cta-overlay"></div>
   </div>
   
-  <div class="container mx-auto px-6 text-center relative z-10">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-4xl md:text-6xl font-black text-white mb-8">
-        Ready to <span class="gradient-text">Settle Your Debt?</span>
-      </h2>
-      <p class="text-xl md:text-2xl text-gray-200 mb-12 leading-relaxed">
-        Join thousands of clients who have achieved financial freedom through our expert personal loan settlement services.
-      </p>
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Settle Your Personal Loan?</h2>
+      <p>Join thousands who achieved financial freedom through our expert settlement services.</p>
       
-      <!-- Action Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <div class="action-card">
-          <mat-icon class="action-icon">chat</mat-icon>
-          <h3 class="action-title">Free Consultation</h3>
-          <p class="action-description">Get expert advice on your settlement options</p>
-          <a routerLink="/contact" class="action-btn">Start Now</a>
+      <div class="cta-features">
+        <div class="feature">
+          <mat-icon>schedule</mat-icon>
+          <span>Free Consultation</span>
         </div>
-        
-        <div class="action-card">
-          <mat-icon class="action-icon">phone</mat-icon>
-          <h3 class="action-title">Speak to Expert</h3>
-          <p class="action-description">Talk to our settlement specialists immediately</p>
-          <a href="tel:+1234567890" class="action-btn">Call: (123) 456-7890</a>
+        <div class="feature">
+          <mat-icon>security</mat-icon>
+          <span>100% Confidential</span>
+        </div>
+        <div class="feature">
+          <mat-icon>flash_on</mat-icon>
+          <span>Quick Response</span>
         </div>
       </div>
       
-      <p class="text-sm text-gray-400">
-        ✓ No upfront fees ✓ No obligation ✓ 100% confidential ✓ Expert legal team
+      <div class="cta-buttons">
+        <a routerLink="/contact" class="btn-primary">
+          <mat-icon>chat</mat-icon>
+          Start Settlement Process
+        </a>
+        <a href="tel:+1234567890" class="btn-secondary">
+          <mat-icon>phone</mat-icon>
+          Call: (123) 456-7890
+        </a>
+      </div>
+      
+      <p class="cta-guarantee">
+        ✓ No upfront fees ✓ No obligation ✓ Complete privacy guaranteed
       </p>
     </div>
   </div>

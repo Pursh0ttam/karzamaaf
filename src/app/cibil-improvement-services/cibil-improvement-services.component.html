@@ -1,444 +1,524 @@
-<!-- Hero Section with 3D Financial Elements -->
-<section class="hero-3d relative min-h-screen flex items-center justify-center overflow-hidden">
-  <!-- Dynamic Background -->
-  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
-    <div class="absolute inset-0 opacity-10 bg-pattern"></div>
-    
-    <!-- Floating 3D Financial Elements -->
-    <div class="floating-financial">
-      <div class="credit-card card-1"></div>
-      <div class="credit-card card-2"></div>
-      <div class="credit-card card-3"></div>
-      <div class="rupee-icon rupee-1">₹</div>
-      <div class="rupee-icon rupee-2">₹</div>
-      <div class="rupee-icon rupee-3">₹</div>
-      <div class="shield-icon shield-1">🛡️</div>
-      <div class="shield-icon shield-2">🛡️</div>
-      <div class="shield-icon shield-3">🛡️</div>
-      <div class="chart-icon chart-1">📈</div>
-      <div class="chart-icon chart-2">📈</div>
-      <div class="chart-icon chart-3">📈</div>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="floating-elements">
+    <div class="floating-circle circle-1">
+      <i class="fas fa-chart-line"></i>
+    </div>
+    <div class="floating-circle circle-2">
+      <i class="fas fa-credit-card"></i>
+    </div>
+    <div class="floating-circle circle-3">
+      <i class="fas fa-coins"></i>
+    </div>
+    <div class="floating-circle circle-4">
+      <i class="fas fa-piggy-bank"></i>
     </div>
   </div>
   
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+  <div class="hero-content">
+    <div class="container mx-auto px-6 text-center">
+      <!-- Hero Badge -->
+      <div class="hero-badge animate-fade-in-up">
+        <i class="fas fa-shield-alt"></i>
+        <span>Trusted Credit Experts</span>
+      </div>
       
-      <!-- Left Column - 3D Content -->
-      <div class="lg:col-span-7 text-center lg:text-left">
-        <!-- 3D Badge -->
-        <div class="mb-8 perspective-1000">
-          <div class="badge-3d transform-style-preserve-3d animate-float">
-            <div class="badge-face badge-front">
-              <mat-icon class="text-blue-400 animate-pulse">trending_up</mat-icon>
-              <span class="font-bold text-white">CIBIL EXPERTS</span>
-            </div>
-            <div class="badge-face badge-back">
-              <mat-icon class="text-gold-accent">verified</mat-icon>
-              <span class="font-bold text-white">SCORE IMPROVEMENT</span>
-            </div>
+      <h1 class="hero-title animate-fade-in-up">
+        Transform Your <span class="gradient-text">Credit Score</span> Today
+      </h1>
+      <p class="hero-subtitle animate-fade-in-up">
+        Unlock better financial opportunities with our expert credit improvement services. 
+        Join 10,000+ satisfied customers who improved their scores by 200+ points!
+      </p>
+      
+      <!-- Hero Stats -->
+      <div class="hero-stats animate-fade-in-up">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-number">10,000+</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="stat-number">60-90</div>
+          <div class="stat-label">Days Average</div>
+        </div>
+      </div>
+      
+      <!-- Hero Actions -->
+      <div class="hero-actions animate-fade-in-up">
+        <button class="btn-primary" (click)="scrollToContact()">
+          <div class="btn-bg"></div>
+          <i class="fas fa-rocket"></i>
+          <span>Start Your Journey</span>
+        </button>
+        <button class="btn-secondary">
+          <i class="fas fa-play"></i>
+          <span>Watch Success Stories</span>
+        </button>
+      </div>
+      
+      <!-- Trust Badges -->
+      <div class="trust-badges animate-fade-in-up">
+        <div class="trust-badge">
+          <i class="fas fa-certificate"></i>
+          <span>RBI Certified</span>
+        </div>
+        <div class="trust-badge">
+          <i class="fas fa-lock"></i>
+          <span>Secure Process</span>
+        </div>
+        <div class="trust-badge">
+          <i class="fas fa-handshake"></i>
+          <span>Money Back Guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Introduction Section with Interactive Cards -->
+<section class="intro-section">
+  <div class="container mx-auto px-6">
+    <div class="intro-content animate-fade-in-up">
+      <div class="intro-image">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Credit Score Dashboard" class="rounded-image">
+        <div class="image-overlay">
+          <div class="play-button">
+            <i class="fas fa-play"></i>
           </div>
         </div>
-        
-        <!-- 3D Headline -->
-        <h1 class="text-4xl md:text-7xl font-black leading-tight mb-8 perspective-1000">
-          <div class="headline-3d transform-style-preserve-3d">
-            <span class="headline-text text-white drop-shadow-2xl font-serif">
-              CIBIL SCORE
-            </span>
-            <span class="headline-shadow"></span>
-          </div>
-          <div class="headline-3d transform-style-preserve-3d" style="animation-delay: 0.2s">
-            <span class="headline-text gradient-text-3d drop-shadow-2xl font-serif">
-              IMPROVEMENT
-            </span>
-            <span class="headline-shadow-gradient"></span>
-          </div>
-        </h1>
-        
-        <!-- Animated Subtitle -->
-        <p class="text-xl md:text-2xl text-gray-200 mb-8 animate-fade-slide-up" style="animation-delay: 0.8s">
-          Transform your financial future with <span class="text-highlight">expert credit repair</span> • 
-          <span class="text-highlight">score enhancement</span> • 
-          <span class="text-highlight">legal dispute resolution</span>
+      </div>
+      <div class="intro-text-content">
+        <h2 class="intro-title">Your Gateway to <span class="text-highlight">Financial Freedom</span></h2>
+        <p class="intro-description">
+          Your CIBIL score is more than just a number – it's your key to unlocking dreams. Whether you want to buy your dream home, 
+          start a business, or get that premium credit card, we help you achieve the credit score you deserve.
         </p>
+        <div class="intro-features">
+          <div class="intro-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Proven 200+ point improvements</span>
+          </div>
+          <div class="intro-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>Expert guidance every step</span>
+          </div>
+          <div class="intro-feature">
+            <i class="fas fa-check-circle"></i>
+            <span>100% legal and compliant methods</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Credit Score Simulator -->
+<section class="score-simulator-section">
+  <div class="container mx-auto px-6">
+    <div class="section-header animate-fade-in-up">
+      <h2 class="section-title">See Your Potential Score Improvement</h2>
+      <p class="section-subtitle">Interactive simulator showing real improvement possibilities</p>
+    </div>
+    
+    <div class="simulator-container animate-fade-in-up">
+      <div class="current-score">
+        <h3>Current Score</h3>
+        <div class="score-display poor">
+          <div class="score-number">580</div>
+          <div class="score-label">Poor</div>
+        </div>
+      </div>
+      
+      <div class="improvement-arrow">
+        <i class="fas fa-arrow-right"></i>
+        <span>Our Process</span>
+      </div>
+      
+      <div class="improved-score">
+        <h3>After Our Service</h3>
+        <div class="score-display excellent">
+          <div class="score-number">750+</div>
+          <div class="score-label">Excellent</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section with Interactive Cards -->
+<section class="benefits-section">
+  <div class="container mx-auto px-6">
+    <div class="section-header animate-fade-in-up">
+      <h2 class="section-title">Transform Your Financial Future</h2>
+      <p class="section-subtitle">
+        Discover how a good CIBIL score opens doors to unlimited opportunities
+      </p>
+    </div>
+    
+    <div class="benefits-grid">
+      <div class="benefit-card feature-card animate-fade-in-up" *ngFor="let benefit of benefits; let i = index" [attr.data-step]="i+1">
+        <div class="card-image">
+          <img [src]="benefit.image" [alt]="benefit.title" class="benefit-image">
+          <div class="card-overlay">
+            <div class="benefit-icon">
+              <i [class]="benefit.icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="benefit-title">{{ benefit.title }}</h3>
+          <p class="benefit-description">{{ benefit.description }}</p>
+          <div class="benefit-stats">
+            <div class="stat">
+              <span class="stat-value">{{ benefit.statValue }}</span>
+              <span class="stat-text">{{ benefit.statText }}</span>
+            </div>
+          </div>
+        </div>
+        <div class="feature-arrow">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Services Timeline -->
+<section class="services-section">
+  <div class="container mx-auto px-6">
+    <div class="section-header animate-fade-in-up">
+      <h2 class="section-title">Our <span class="gradient-text">Step-by-Step</span> Process</h2>
+      <p class="section-subtitle">
+        Follow our proven methodology to credit score success
+      </p>
+    </div>
+    
+    <!-- Timeline Line -->
+    <div class="timeline-line"></div>
+    
+    <div class="services-timeline">
+      <div class="timeline-item animate-fade-in-up" *ngFor="let service of services; let i = index" [attr.data-step]="i+1">
+        <div class="timeline-dot">
+          <i [class]="service.icon"></i>
+        </div>
+        <div class="timeline-content">
+          <div class="service-image">
+            <img [src]="service.image" [alt]="service.title" class="service-img">
+          </div>
+          <h3 class="service-title">{{ service.title }}</h3>
+          <p class="service-description">{{ service.description }}</p>
+          <div class="timeline-features">
+            <div class="timeline-feature" *ngFor="let feature of service.features">
+              <i class="fas fa-check"></i>
+              <span>{{ feature }}</span>
+            </div>
+          </div>
+          <div class="service-duration">
+            <i class="fas fa-clock"></i>
+            <span>{{ service.duration }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Success Stories with Images -->
+<section class="success-section">
+  <div class="container mx-auto px-6">
+    <div class="section-header animate-fade-in-up">
+      <h2 class="section-title">Real Success Stories</h2>
+      <p class="section-subtitle">See how we've transformed lives through better credit scores</p>
+    </div>
+    
+    <div class="success-grid">
+      <div class="success-card hover-lift animate-fade-in-up" *ngFor="let story of successStories">
+        <div class="success-header">
+          <div class="success-avatar">
+            <img [src]="story.avatar" [alt]="story.name" class="avatar-img">
+          </div>
+          <div class="success-info">
+            <h4 class="success-name">{{ story.name }}</h4>
+            <p class="success-location">{{ story.location }}</p>
+            <div class="star-rating">
+              <i class="fas fa-star" *ngFor="let star of [1,2,3,4,5]"></i>
+            </div>
+          </div>
+          <div class="score-improvement">
+            <div class="score-change">
+              <span class="old-score">{{ story.oldScore }}</span>
+              <i class="fas fa-arrow-right"></i>
+              <span class="new-score">{{ story.newScore }}</span>
+            </div>
+            <p class="improvement-text">+{{ story.improvement }} Points</p>
+          </div>
+        </div>
+        <blockquote class="success-quote">
+          "{{ story.testimonial }}"
+        </blockquote>
+        <div class="success-achievement">
+          <i class="fas fa-trophy"></i>
+          <span>{{ story.achievement }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Contact Form -->
+<section id="contact-section" class="contact-section">
+  <div class="container mx-auto px-6">
+    <div class="section-header animate-fade-in-up">
+      <h2 class="section-title">Start Your Credit Transformation</h2>
+      <p class="section-subtitle">
+        Get your free credit analysis and personalized improvement plan
+      </p>
+    </div>
+    
+    <div class="contact-wrapper">
+      <!-- Enhanced Contact Info -->
+      <div class="contact-info glass-card animate-fade-in-up">
+        <div class="contact-header">
+          <div class="contact-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3 class="contact-info-title">Expert Consultation</h3>
+        </div>
         
-        <!-- 3D Action Buttons -->
-        <div class="flex flex-col sm:flex-row gap-6 mb-8 animate-fade-slide-up" style="animation-delay: 1s">
-          <button (click)="onGetHelp()" class="btn-3d-primary group perspective-1000">
-            <div class="btn-3d-body transform-style-preserve-3d">
-              <div class="btn-face btn-top"></div>
-              <div class="btn-face btn-front">
-                <mat-icon class="mr-2">trending_up</mat-icon>
-                IMPROVE MY SCORE
-              </div>
-              <div class="btn-face btn-right"></div>
-              <div class="btn-face btn-bottom"></div>
-            </div>
-          </button>
-          
-          <button (click)="onContactExperts()" class="btn-3d-secondary group perspective-1000">
-            <div class="btn-3d-body transform-style-preserve-3d">
-              <div class="btn-face btn-top-secondary"></div>
-              <div class="btn-face btn-front-secondary">
-                <mat-icon class="mr-2">support_agent</mat-icon>
-                CONTACT EXPERTS
-              </div>
-              <div class="btn-face btn-right-secondary"></div>
-              <div class="btn-face btn-bottom-secondary"></div>
-            </div>
-          </button>
+        <div class="consultation-image">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Credit Expert" class="expert-image">
         </div>
-
-        <!-- 3D Stats Row -->
-        <div class="grid grid-cols-3 gap-4 animate-fade-slide-up" style="animation-delay: 1.2s">
-          <div class="stat-3d-mini">
-            <div class="stat-3d-content">
-              <div class="stat-number-3d">750+</div>
-              <div class="stat-label-3d">Avg Score</div>
+        
+        <div class="info-points">
+          <div class="info-point">
+            <div class="info-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="info-content">
+              <h4>10+ Years Experience</h4>
+              <p>Expert credit improvement specialists</p>
             </div>
           </div>
-          <div class="stat-3d-mini">
-            <div class="stat-3d-content">
-              <div class="stat-number-3d">95%</div>
-              <div class="stat-label-3d">Success Rate</div>
+          <div class="info-point">
+            <div class="info-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>100% Secure Process</h4>
+              <p>Bank-level security & confidentiality</p>
             </div>
           </div>
-          <div class="stat-3d-mini">
-            <div class="stat-3d-content">
-              <div class="stat-number-3d">30</div>
-              <div class="stat-label-3d">Days Avg</div>
+          <div class="info-point">
+            <div class="info-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="info-content">
+              <h4>Proven Results</h4>
+              <p>Average 200+ point improvement</p>
+            </div>
+          </div>
+          <div class="info-point">
+            <div class="info-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div class="info-content">
+              <h4>24/7 Support</h4>
+              <p>Always available when you need us</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Methods -->
+        <div class="contact-methods">
+          <div class="contact-method">
+            <i class="fas fa-phone"></i>
+            <div class="method-info">
+              <h5>Call Us Now</h5>
+              <p>+91 98765-43210</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <div class="method-info">
+              <h5>Email Us</h5>
+              <p>"experts.com"</p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Right Column - 3D CIBIL Dashboard -->
-      <div class="lg:col-span-5 animate-fade-slide-up" style="animation-delay: 1.6s">
-        <div class="cibil-dashboard-3d perspective-1000">
-          <div class="dashboard-container transform-style-preserve-3d">
+      
+      <!-- Enhanced Contact Form -->
+      <div class="contact-form animate-fade-in-up">
+        <div class="form-header">
+          <h3>Get Your Free Credit Analysis</h3>
+          <p>Takes only 2 minutes • 100% Free • No Obligation</p>
+        </div>
+        
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i>
+                Full Name *
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                formControlName="name"
+                placeholder="Enter your full name"
+                [class.error]="isFieldInvalid('name')">
+              <div class="error-message" *ngIf="isFieldInvalid('name')">
+                Please enter a valid name (minimum 2 characters)
+              </div>
+            </div>
             
-            <!-- Dashboard Header -->
-            <div class="dashboard-header">
-              <div class="status-indicator">
-                <div class="status-dot animate-pulse"></div>
-                <span class="status-text">IMPROVEMENT ACTIVE</span>
+            <div class="form-group">
+              <label for="phone">
+                <i class="fas fa-phone"></i>
+                Phone Number *
+              </label>
+              <input 
+                type="tel" 
+                id="phone" 
+                formControlName="phone"
+                placeholder="Enter your 10-digit mobile number"
+                [class.error]="isFieldInvalid('phone')">
+              <div class="error-message" *ngIf="isFieldInvalid('phone')">
+                Please enter a valid 10-digit phone number
               </div>
-              <div class="dashboard-title">CIBIL Score Monitor</div>
-            </div>
-
-            <!-- Score Meter 3D -->
-            <div class="score-meter-container">
-              <div class="score-meter-3d">
-                <div class="meter-outer">
-                  <div class="meter-inner">
-                    <div class="score-needle"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="score-center">
-                <div class="score-value">750</div>
-                <div class="score-label">CIBIL Score</div>
-              </div>
-              <div class="score-ranges">
-                <span class="range poor">Poor</span>
-                <span class="range fair">Fair</span>
-                <span class="range good">Good</span>
-                <span class="range excellent">Excellent</span>
-              </div>
-            </div>
-
-            <!-- Credit Metrics -->
-            <div class="credit-metrics">
-              <div class="metric-card">
-                <div class="metric-icon">💳</div>
-                <div class="metric-value">85%</div>
-                <div class="metric-label">Payment History</div>
-                <div class="metric-progress">
-                  <div class="progress-bar progress-excellent" style="width: 85%"></div>
-                </div>
-              </div>
-
-              <div class="metric-card">
-                <div class="metric-icon">📊</div>
-                <div class="metric-value">30%</div>
-                <div class="metric-label">Credit Utilization</div>
-                <div class="metric-progress">
-                  <div class="progress-bar progress-good" style="width: 70%"></div>
-                </div>
-              </div>
-
-              <div class="metric-card">
-                <div class="metric-icon">📈</div>
-                <div class="metric-value">5 Yrs</div>
-                <div class="metric-label">Credit Age</div>
-                <div class="metric-progress">
-                  <div class="progress-bar progress-warning" style="width: 60%"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Activity Feed -->
-            <div class="activity-feed">
-              <div class="activity-header">Recent Improvements</div>
-              <div class="activity-list">
-                <div class="activity-item">
-                  <div class="activity-dot success"></div>
-                  <div class="activity-text">Score increased by 50 points</div>
-                  <div class="activity-time">2 days ago</div>
-                </div>
-                <div class="activity-item">
-                  <div class="activity-dot warning"></div>
-                  <div class="activity-text">Dispute filed for incorrect entry</div>
-                  <div class="activity-time">1 week ago</div>
-                </div>
-                <div class="activity-item">
-                  <div class="activity-dot info"></div>
-                  <div class="activity-text">Credit utilization improved</div>
-                  <div class="activity-time">2 weeks ago</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Quick Actions -->
-            <div class="quick-actions">
-              <button class="action-btn action-primary">
-                <mat-icon>assessment</mat-icon>
-                <span>View Report</span>
-              </button>
-              <button class="action-btn action-secondary">
-                <mat-icon>contact_support</mat-icon>
-                <span>Get Help</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D Services Section -->
-<section class="py-32 bg-gradient-to-br from-gray-900 to-slate-900 relative overflow-hidden">
-  <!-- Animated Background Elements -->
-  <div class="absolute inset-0">
-    <div class="financial-particles"></div>
-  </div>
-  
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="text-center mb-20">
-      <h2 class="text-5xl md:text-7xl font-black mb-6 font-serif">
-        <span class="gradient-text-3d">Our CIBIL Services</span>
-      </h2>
-      <p class="text-2xl text-gray-300 max-w-4xl mx-auto font-light">
-        Comprehensive credit improvement solutions with expert financial guidance
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Service Cards -->
-      <div class="service-card-3d group perspective-1000" *ngFor="let service of legalServices; let i = index">
-        <div class="service-inner transform-style-preserve-3d">
-          <div class="service-face service-front">
-            <div class="service-icon-3d">
-              <div class="icon-pyramid">
-                <div class="pyramid-face pyramid-front">
-                  <mat-icon>{{ service.icon }}</mat-icon>
-                </div>
-                <div class="pyramid-face pyramid-back"></div>
-                <div class="pyramid-face pyramid-right"></div>
-                <div class="pyramid-face pyramid-left"></div>
-                <div class="pyramid-face pyramid-bottom"></div>
-              </div>
-            </div>
-            <h3 class="service-title-3d">{{ service.title }}</h3>
-            <p class="service-desc-3d">{{ service.description }}</p>
-            <div class="service-learn-more">
-              <span>Hover to explore</span>
-              <mat-icon>arrow_forward</mat-icon>
-            </div>
-          </div>
-          <div class="service-face service-back">
-            <div class="service-back-content">
-              <div class="back-header">
-                <mat-icon class="back-icon">{{ service.icon }}</mat-icon>
-                <h3 class="back-title">{{ service.title }}</h3>
-              </div>
-              <div class="back-highlights">
-                <div class="highlight-item" *ngFor="let feature of service.features">
-                  <mat-icon>check_circle</mat-icon>
-                  <span>{{ feature }}</span>
-                </div>
-              </div>
-              <button class="learn-more-btn">
-                <span>Get Protection</span>
-                <mat-icon>arrow_forward</mat-icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D Blog Section -->
-<section class="py-32 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
-  <!-- Legal Pattern Background -->
-  <div class="absolute inset-0 opacity-5">
-    <div class="legal-pattern-bg"></div>
-  </div>
-  
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="text-center mb-20">
-      <h2 class="text-5xl md:text-7xl font-black mb-6 text-slate-900 font-serif">
-        <span class="gradient-text">Legal Insights</span>
-      </h2>
-      <p class="text-2xl text-slate-600 max-w-4xl mx-auto font-light">
-        Expert guidance and resources to protect your rights against harassment
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Blog Cards -->
-      <article class="blog-card-3d group perspective-1000" *ngFor="let post of blogPosts; let i = index">
-        <div class="blog-inner transform-style-preserve-3d">
-          <div class="blog-face blog-front">
-            <div class="blog-image-container">
-              <img [src]="post.image" [alt]="post.title" class="blog-image">
-              <div class="blog-overlay"></div>
-              <div class="blog-category">{{ post.category }}</div>
-              <div class="blog-author">{{ post.author }}</div>
-            </div>
-            <div class="blog-content">
-              <div class="blog-meta">
-                <span>{{ post.readTime }}</span>
-                <span>{{ post.publishDate }}</span>
-              </div>
-              <h3 class="blog-title">{{ post.title }}</h3>
-              <p class="blog-description">{{ post.description }}</p>
-              <button class="blog-btn-3d" (click)="onReadMore(post.id)">
-                <span>Read More</span>
-                <mat-icon>arrow_forward</mat-icon>
-              </button>
-            </div>
-          </div>
-          <div class="blog-face blog-back">
-            <div class="blog-back-content">
-              <div class="back-header">
-                <mat-icon class="back-icon">article</mat-icon>
-                <h3 class="back-title">{{ post.category }}</h3>
-              </div>
-              <div class="back-highlights">
-                <div class="highlight-item">
-                  <mat-icon>check_circle</mat-icon>
-                  <span>Expert Legal Advice</span>
-                </div>
-                <div class="highlight-item">
-                  <mat-icon>check_circle</mat-icon>
-                  <span>Practical Solutions</span>
-                </div>
-                <div class="highlight-item">
-                  <mat-icon>check_circle</mat-icon>
-                  <span>Real Case Studies</span>
-                </div>
-              </div>
-              <button class="read-full-btn" (click)="onReadMore(post.id)">
-                <span>Read Full Article</span>
-                <mat-icon>open_in_new</mat-icon>
-              </button>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- 3D CTA Section -->
-<section class="py-32 relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <!-- Animated legal symbols -->
-    <div class="legal-symbol-rain"></div>
-  </div>
-  
-  <div class="container mx-auto px-6 text-center relative z-10">
-    <div class="max-w-5xl mx-auto">
-      
-      <!-- 3D Justice Badge -->
-      <div class="justice-badge-3d perspective-1000 mb-8 inline-block">
-        <div class="justice-inner transform-style-preserve-3d">
-          <div class="justice-face justice-front">
-            <mat-icon class="badge-icon">balance</mat-icon>
-            <span class="badge-text">HARASSMENT PROTECTION EXPERTS</span>
-            <span class="badge-score">500+</span>
-          </div>
-          <div class="justice-face justice-back">
-            <mat-icon class="badge-icon">gavel</mat-icon>
-            <span class="badge-text">LEGAL ADVOCACY SPECIALISTS</span>
-            <span class="badge-score">98%</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 3D Main Headline -->
-      <h2 class="text-5xl md:text-8xl font-black text-white mb-8 perspective-1000 font-serif">
-        <div class="cta-headline transform-style-preserve-3d">
-          <span class="gradient-text-3d">Ready to Fight Back?</span>
-        </div>
-      </h2>
-      
-      <p class="text-2xl md:text-3xl text-gray-200 mb-12 leading-relaxed">
-        Don't let harassment define your life. Get expert legal protection and advocacy 
-        with our <span class="text-highlight">experienced legal team</span>.
-      </p>
-      
-      <!-- 3D Action Center -->
-      <div class="action-center-3d perspective-1000 mb-12">
-        <div class="flex flex-col md:flex-row gap-8 justify-center">
-          <div class="legal-primary-btn-3d perspective-1000">
-            <div class="legal-primary-inner transform-style-preserve-3d">
-              <div class="btn-face legal-primary-top"></div>
-              <div class="btn-face legal-primary-front">
-                <span>Start Your Legal Protection</span>
-              </div>
-              <div class="btn-face legal-primary-right"></div>
-              <div class="btn-face legal-primary-bottom"></div>
             </div>
           </div>
           
-          <div class="legal-secondary-btn-3d perspective-1000">
-            <div class="legal-secondary-inner transform-style-preserve-3d">
-              <div class="btn-face legal-secondary-top"></div>
-              <div class="btn-face legal-secondary-front">
-                <span>Free Legal Consultation</span>
-              </div>
-              <div class="btn-face legal-secondary-right"></div>
-              <div class="btn-face legal-secondary-bottom"></div>
+          <div class="form-group">
+            <label for="email">
+              <i class="fas fa-envelope"></i>
+              Email Address *
+            </label>
+            <input 
+              type="email" 
+              id="email" 
+              formControlName="email"
+              placeholder="Enter your email address"
+              [class.error]="isFieldInvalid('email')">
+            <div class="error-message" *ngIf="isFieldInvalid('email')">
+              Please enter a valid email address
             </div>
           </div>
+          
+          <div class="form-group">
+            <label for="currentScore">
+              <i class="fas fa-chart-line"></i>
+              Current Credit Score (Optional)
+            </label>
+            <select id="currentScore" formControlName="currentScore">
+              <option value="">Select your current score range</option>
+              <option value="300-549">300-549 (Very Poor)</option>
+              <option value="550-649">550-649 (Poor)</option>
+              <option value="650-699">650-699 (Fair)</option>
+              <option value="700-749">700-749 (Good)</option>
+              <option value="750+">750+ (Excellent)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">
+              <i class="fas fa-comment-alt"></i>
+              Your Goals & Concerns *
+            </label>
+            <textarea 
+              id="message" 
+              formControlName="message"
+              rows="4"
+              placeholder="Tell us about your credit goals, current challenges, or any specific requirements..."
+              [class.error]="isFieldInvalid('message')"></textarea>
+            <div class="error-message" *ngIf="isFieldInvalid('message')">
+              Please provide a message (minimum 10 characters)
+            </div>
+          </div>
+          
+          <!-- Form Benefits -->
+          <div class="form-benefits">
+            <div class="benefit-item">
+              <i class="fas fa-gift"></i>
+              <span>Free Credit Report Analysis</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-road"></i>
+              <span>Personalized Improvement Roadmap</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>Expert Consultation Call</span>
+            </div>
+          </div>
+          
+          <button type="submit" class="submit-btn" [disabled]="contactForm.invalid">
+            <i class="fas fa-rocket"></i>
+            <span>Get My Free Analysis</span>
+            <div class="btn-shine"></div>
+          </button>
+          
+          <p class="form-disclaimer">
+            <i class="fas fa-lock"></i>
+            Your information is 100% secure and will never be shared
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Enhanced Info Section -->
+<section class="info-section">
+  <div class="container mx-auto px-6">
+    <div class="info-grid">
+      <div class="info-card stat-card animate-fade-in-up">
+        <div class="info-image">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Quick Response" class="card-img">
         </div>
+        <div class="stat-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h3>24 Hour Response</h3>
+        <p>Get expert analysis and personalized recommendations within 24 hours of submission</p>
+        <div class="stat-progress"></div>
       </div>
       
-      <!-- Trust Badges 3D -->
-      <div class="trust-badges-3d">
-        <div class="badge-3d-item">
-          <mat-icon>gavel</mat-icon>
-          <span>Legal Expertise</span>
+      <div class="info-card stat-card animate-fade-in-up">
+        <div class="info-image">
+          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Confidential Service" class="card-img">
         </div>
-        <div class="badge-3d-item">
-          <mat-icon>security</mat-icon>
-          <span>Confidential Service</span>
+        <div class="stat-icon">
+          <i class="fas fa-user-shield"></i>
         </div>
-        <div class="badge-3d-item">
-          <mat-icon>verified</mat-icon>
-          <span>Proven Results</span>
+        <h3>Bank-Level Security</h3>
+        <p>Your personal and financial information protected with enterprise-grade encryption</p>
+        <div class="stat-progress"></div>
+      </div>
+      
+      <div class="info-card stat-card animate-fade-in-up">
+        <div class="info-image">
+          <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Free Consultation" class="card-img">
         </div>
-        <div class="badge-3d-item">
-          <mat-icon>support_agent</mat-icon>
-          <span>24/7 Support</span>
+        <div class="stat-icon">
+          <i class="fas fa-gift"></i>
         </div>
+        <h3>Free Initial Consultation</h3>
+        <p>Comprehensive credit analysis and improvement strategy at absolutely no cost</p>
+        <div class="stat-progress"></div>
       </div>
     </div>
   </div>
