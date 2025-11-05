@@ -38,6 +38,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   // Video consultation properties
   consultationDate: string = '';
   selectedPlatform: string = 'zoom';
+  contactEmail = 'karzamaaf@gmail.com';
   minDate: string = '';
 
   constructor() {

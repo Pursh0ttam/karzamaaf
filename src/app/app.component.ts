@@ -13,6 +13,7 @@ import { OurServicesComponent } from './core/our-services/our-services.component
 export class AppComponent {
   isMobileMenuOpen = false;
   isServicesDropdownOpen = false;
+  email = 'karzamaaf@gmail.com';
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
