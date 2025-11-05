@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 
 interface LegalService {
@@ -32,7 +33,7 @@ interface Stat {
 @Component({
   selector: 'app-anti-harassment-services',
   standalone: true,
-  imports: [CommonModule, RouterModule, SharedModule],
+  imports: [CommonModule, RouterModule, FormsModule, SharedModule],
   templateUrl: './anti-harassment-services.component.html',
   styleUrl: './anti-harassment-services.component.scss'
 })
@@ -157,5 +158,25 @@ export class AntiHarassmentServicesComponent implements OnInit, OnDestroy {
     // Navigate to blog post detail or handle read more action
     console.log('Read more clicked for post:', postId);
     // You can add navigation logic here
+  }
+
+  // Form properties
+  harassmentType: string = 'workplace';
+  duration: string = 'recent';
+  evidence: string = 'some';
+  openFaq: number | null = null;
+
+  // Methods for template
+  scrollToConsultation(): void {
+    document.getElementById('consultation')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  startConsultation(): void {
+    console.log('Starting consultation');
+    // Add consultation logic here
+  }
+
+  toggleFaq(index: number): void {
+    this.openFaq = this.openFaq === index ? null : index;
   }
 }

@@ -1,235 +1,190 @@
-<!-- Hero Section with 3D Elements -->
-<section class="hero-3d-about">
-  <div class="floating-particles">
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
+<!-- Hero Section with Constitution Background -->
+<section class="hero-section">
+  <div class="constitution-bg"></div>
+  <div class="floating-elements">
+    <div class="scale-icon">⚖️</div>
+    <div class="gavel-icon">🔨</div>
+    <div class="book-icon">📚</div>
+    <div class="shield-icon">🛡️</div>
   </div>
   
-  <div class="container mx-auto px-6">
-    <div class="hero-content-3d">
-      <!-- 3D Badge -->
-      <div class="hero-badge-3d">
-        <div class="badge-inner transform-style-preserve-3d">
-          <div class="badge-face">
-            <mat-icon class="text-2xl">account_balance</mat-icon>
-            <span>TRUSTED LEGAL EXPERTS</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- 3D Title -->
-      <h1 class="hero-title-3d">
-        <span class="title-word">About</span>
-        <span class="title-word">KarzaMaaf</span>
-      </h1>
-      
-      <!-- 3D Subtitle -->
-      <p class="hero-subtitle-3d">
-        Your trusted partner in navigating the complexities of debt settlement and achieving 
-        <span class="gradient-text-3d">financial freedom</span> through expert legal guidance.
-      </p>
-      
-      <!-- 3D Action Buttons -->
-      <div class="hero-actions-3d">
-        <button (click)="onContactUs()" class="btn-3d-primary">
-          <div class="btn-3d-inner transform-style-preserve-3d">
-            <div class="btn-face btn-top"></div>
-            <div class="btn-face btn-front">
-              <mat-icon>contact_support</mat-icon>
-              <span>Contact Our Experts</span>
-            </div>
-            <div class="btn-face btn-right"></div>
-            <div class="btn-face btn-bottom"></div>
-          </div>
-        </button>
-        
-        <button (click)="onViewServices()" class="btn-3d-secondary">
-          <div class="btn-3d-inner transform-style-preserve-3d">
-            <div class="btn-face btn-top"></div>
-            <div class="btn-face btn-front">
-              <mat-icon>business_center</mat-icon>
-              <span>View Our Services</span>
-            </div>
-            <div class="btn-face btn-right"></div>
-            <div class="btn-face btn-bottom"></div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D Stats Section -->
-<section class="stats-3d-section" #statsCounter>
-  <div class="container mx-auto px-6">
-    <div class="stats-container-3d">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="stat-card-3d" *ngFor="let achievement of achievements; let i = index">
-          <div class="stat-inner transform-style-preserve-3d">
-            <div class="stat-face stat-front">
-              <mat-icon class="stat-icon-3d" [ngClass]="achievement.color">
-                {{ achievement.icon }}
-              </mat-icon>
-              <div class="stat-value-3d">{{ achievement.value }}</div>
-              <div class="stat-label-3d">{{ achievement.title }}</div>
-            </div>
-            <div class="stat-face stat-back">
-              <div class="stat-description-3d">{{ achievement.description }}</div>
-              <mat-icon class="stat-icon-3d" [ngClass]="achievement.color">
-                {{ achievement.icon }}
-              </mat-icon>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D Story Section -->
-<section class="story-3d-section">
-  <div class="container mx-auto px-6">
-    <div class="story-container-3d">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <!-- Story Image -->
-        <div class="story-image-3d lg:order-2">
-          <div class="image-container">
-            <img 
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=400&fit=crop" 
-              alt="Our Story" 
-              class="w-full h-full object-cover"
-            >
-          </div>
-        </div>
-        
-        <!-- Story Content -->
-        <div class="story-text-3d lg:order-1">
-          <h2 class="story-title-3d">Our Journey to Justice</h2>
-          
-          <p class="story-paragraph-3d">
-            Founded with a vision to empower individuals burdened by overwhelming debt, KarzaMaaf began its 
-            journey by recognizing a critical need for ethical and effective legal solutions in the debt 
-            settlement landscape. We saw firsthand the distress caused by aggressive collection practices 
-            and the lack of clear pathways to financial recovery.
-          </p>
-          
-          <p class="story-paragraph-3d">
-            Since our inception, we have dedicated ourselves to advocating for our clients' rights, providing 
-            transparent guidance, and negotiating tirelessly on their behalf. Our commitment extends beyond 
-            just settling debts; we strive to restore peace of mind and help our clients build a foundation 
-            for a secure financial future.
-          </p>
-          
-          <p class="story-paragraph-3d">
-            With over {{ currentYear - 2009 }} years of combined experience, our team has successfully resolved 
-            thousands of debt cases, helping families regain their financial stability and dignity. We believe 
-            everyone deserves a second chance, and we're here to make that possible.
-          </p>
-          
-          <div class="mt-8">
-            <button (click)="onLearnMore()" class="btn-3d-primary">
-              <div class="btn-3d-inner transform-style-preserve-3d">
-                <div class="btn-face btn-top"></div>
-                <div class="btn-face btn-front">
-                  <mat-icon>info</mat-icon>
-                  <span>Learn More</span>
-                </div>
-                <div class="btn-face btn-right"></div>
-                <div class="btn-face btn-bottom"></div>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D Core Values Section -->
-<section class="values-3d-section">
-  <div class="container mx-auto px-6">
-    <div class="values-header-3d">
-      <h2 class="values-title-3d">
-        Our <span class="title-highlight">Core Values</span>
-      </h2>
-      <p class="values-subtitle-3d">
-        The principles that guide every decision and action we take
-      </p>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <mat-icon>account_balance</mat-icon>
+      <span>INDIA'S PREMIER LEGAL ADVOCATES</span>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="value-card-3d" *ngFor="let value of coreValues; let i = index">
-        <div class="value-inner transform-style-preserve-3d">
-          <div class="value-face value-front">
-            <div class="value-icon-3d" [ngClass]="value.color">
-              <mat-icon>{{ value.icon }}</mat-icon>
-            </div>
-            <h3 class="value-title-3d">{{ value.title }}</h3>
-            <p class="value-description-3d">{{ value.description }}</p>
-          </div>
-          <div class="value-face value-back">
-            <div class="value-details-3d">
-              <h3 class="value-title-3d">{{ value.title }}</h3>
-              <div class="detail-item" *ngFor="let detail of value.details">
-                <mat-icon>check_circle</mat-icon>
-                <span>{{ detail }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <h1 class="hero-title">
+      <span class="title-line">Guardians of</span>
+      <span class="title-line gradient-text">Justice & Freedom</span>
+    </h1>
+    
+    <p class="hero-subtitle">
+      Empowering citizens through constitutional rights and expert legal advocacy. 
+      We transform legal complexities into pathways of <strong>hope and resolution</strong>.
+    </p>
+    
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">15,000+</span>
+        <span class="stat-label">Cases Won</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3D Team Section -->
-<section class="team-3d-section">
-  <div class="container mx-auto px-6">
-    <div class="team-header-3d">
-      <h2 class="team-title-3d">Meet Our Expert Team</h2>
-      <p class="team-subtitle-3d">
-        Dedicated professionals committed to your financial freedom
-      </p>
+      <div class="stat-item">
+        <span class="stat-number">98%</span>
+        <span class="stat-label">Success Rate</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">25+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="team-member-3d" *ngFor="let member of teamMembers; let i = index">
-        <div class="member-inner transform-style-preserve-3d">
-          <div class="member-face member-front">
-            <div class="member-image-container">
-              <img [src]="member.image" [alt]="member.name">
-              <div class="member-overlay"></div>
-              <div class="member-experience">{{ member.experience }}</div>
+    <div class="hero-actions">
+      <button class="btn-primary" (click)="onContactUs()">
+        <mat-icon>gavel</mat-icon>
+        <span>Get Legal Consultation</span>
+      </button>
+      <button class="btn-secondary" (click)="onViewServices()">
+        <mat-icon>library_books</mat-icon>
+        <span>Our Legal Services</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="mission-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Sacred Mission</h2>
+      <p class="section-subtitle">Upholding the pillars of justice with unwavering dedication</p>
+    </div>
+    
+    <div class="mission-grid">
+      <div class="mission-card">
+        <div class="card-icon">
+          <mat-icon>balance</mat-icon>
+        </div>
+        <h3>Constitutional Rights</h3>
+        <p>We safeguard your fundamental rights as enshrined in the Indian Constitution, ensuring equal justice for all citizens regardless of their background.</p>
+        <div class="card-quote">
+          "Justice delayed is justice denied" - We make it our mission to expedite your legal journey.
+        </div>
+      </div>
+      
+      <div class="mission-card">
+        <div class="card-icon">
+          <mat-icon>security</mat-icon>
+        </div>
+        <h3>Legal Protection</h3>
+        <p>Your shield against legal complexities. We provide comprehensive protection through expert advocacy and strategic legal planning.</p>
+        <div class="card-quote">
+          "The law is not a light for you or any man to see by; the law is not an instrument of any kind. The law is a causeway upon which, so long as he keeps to it, a citizen may walk safely."
+        </div>
+      </div>
+      
+      <div class="mission-card">
+        <div class="card-icon">
+          <mat-icon>people</mat-icon>
+        </div>
+        <h3>Community Service</h3>
+        <p>Beyond individual cases, we serve the community by promoting legal awareness and providing accessible justice to those who need it most.</p>
+        <div class="card-quote">
+          "Access to justice is a fundamental right, not a privilege" - Our commitment to serving every citizen.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="story-section">
+  <div class="container">
+    <div class="story-content">
+      <div class="story-text">
+        <div class="story-badge">
+          <mat-icon>auto_stories</mat-icon>
+          <span>OUR LEGACY</span>
+        </div>
+        
+        <h2 class="story-title">Rooted in India's Rich Legal Heritage</h2>
+        
+        <div class="story-paragraphs">
+          <p class="story-paragraph highlight">
+            <strong>Born from the vision of justice for all</strong>, KarzaMaaf emerged during India's legal renaissance, 
+            when the need for accessible, ethical legal services became paramount. Our founders, inspired by the 
+            constitutional principles of equality and justice, established this firm to bridge the gap between 
+            complex legal systems and common citizens.
+          </p>
+          
+          <p class="story-paragraph">
+            Drawing inspiration from ancient Indian jurisprudence and modern constitutional law, we have crafted 
+            a unique approach that honors both tradition and innovation. Our practice is built on the foundation 
+            of <em>"Dharma"</em> - righteous duty - ensuring that every case we handle upholds the highest 
+            standards of legal and moral integrity.
+          </p>
+          
+          <p class="story-paragraph">
+            Over the years, we have witnessed the transformation of India's legal landscape and have been 
+            privileged to contribute to landmark cases that have shaped jurisprudence. From protecting 
+            fundamental rights to pioneering debt relief mechanisms, our journey reflects India's own 
+            evolution as a nation committed to justice and equality.
+          </p>
+          
+          <div class="story-achievements">
+            <div class="achievement-item">
+              <mat-icon>emoji_events</mat-icon>
+              <div>
+                <strong>Supreme Court Recognition</strong>
+                <span>Acknowledged for constitutional advocacy</span>
+              </div>
             </div>
-            <div class="member-content">
-              <h3 class="member-name-3d">{{ member.name }}</h3>
-              <p class="member-position-3d">{{ member.position }}</p>
-              <p class="member-description-3d">{{ member.description }}</p>
-              <div class="member-specialties-3d">
-                <span class="specialty-item" *ngFor="let specialty of member.specialties">
-                  {{ specialty }}
-                </span>
+            <div class="achievement-item">
+              <mat-icon>school</mat-icon>
+              <div>
+                <strong>Legal Education Pioneer</strong>
+                <span>Training next generation of advocates</span>
+              </div>
+            </div>
+            <div class="achievement-item">
+              <mat-icon>public</mat-icon>
+              <div>
+                <strong>Social Impact</strong>
+                <span>Pro bono services for underprivileged</span>
               </div>
             </div>
           </div>
-          <div class="member-face member-back">
-            <div class="member-back-content">
-              <h3 class="member-name-3d">{{ member.name }}</h3>
-              <div class="back-specialties">
-                <div class="specialty-item-back" *ngFor="let specialty of member.specialties">
-                  <mat-icon>star</mat-icon>
-                  <span>{{ specialty }}</span>
-                </div>
+        </div>
+      </div>
+      
+      <div class="story-visual">
+        <div class="constitution-frame">
+          <div class="frame-content">
+            <div class="constitution-text">
+              <h3>भारत का संविधान</h3>
+              <h4>Constitution of India</h4>
+              <div class="preamble">
+                "WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a 
+                SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:
+                JUSTICE, social, economic and political..."
               </div>
-              <p class="member-description-3d">
-                {{ member.description }} With {{ member.experience }} of experience, 
-                they bring unmatched expertise to every case.
-              </p>
+              <div class="emblem">
+                <div class="ashoka-chakra">☸</div>
+                <div class="motto">सत्यमेव जयते</div>
+              </div>
             </div>
+          </div>
+        </div>
+        
+        <div class="legal-books">
+          <div class="book book-1">
+            <div class="book-spine">Indian Penal Code</div>
+          </div>
+          <div class="book book-2">
+            <div class="book-spine">Civil Procedure Code</div>
+          </div>
+          <div class="book book-3">
+            <div class="book-spine">Constitution of India</div>
           </div>
         </div>
       </div>
@@ -237,40 +192,132 @@
   </div>
 </section>
 
-<!-- 3D Call to Action Section -->
-<section class="cta-3d-section">
-  <div class="container mx-auto px-6">
-    <div class="cta-content-3d">
-      <h2 class="cta-title-3d">Ready to Regain Your Financial Freedom?</h2>
-      <p class="cta-subtitle-3d">
-        Don't let debt control your life. Contact KarzaMaaf today for a free, confidential 
-        consultation and take the first step towards a brighter financial future.
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Voices of Justice</h2>
+      <p class="section-subtitle">Real stories from clients whose lives we've transformed</p>
+    </div>
+    
+    <div class="testimonials-grid">
+      <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+        <div class="testimonial-content">
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">{{ testimonial.text }}</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <mat-icon>person</mat-icon>
+            </div>
+            <div class="author-info">
+              <h4>{{ testimonial.name }}</h4>
+              <span>{{ testimonial.case }}</span>
+            </div>
+          </div>
+          <div class="testimonial-rating">
+            <mat-icon *ngFor="let star of [1,2,3,4,5]">star</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Legal Insights Blog Section -->
+<section class="blog-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Legal Insights & Updates</h2>
+      <p class="section-subtitle">Stay informed with our expert analysis and legal updates</p>
+    </div>
+    
+    <div class="blog-grid">
+      <article class="blog-card" *ngFor="let post of blogPosts">
+        <div class="blog-image">
+          <img [src]="post.image" [alt]="post.title">
+          <div class="blog-category">{{ post.category }}</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-date">{{ post.date }}</span>
+            <span class="blog-read-time">{{ post.readTime }} min read</span>
+          </div>
+          <h3 class="blog-title">{{ post.title }}</h3>
+          <p class="blog-excerpt">{{ post.excerpt }}</p>
+          <div class="blog-author">
+            <mat-icon>account_circle</mat-icon>
+            <span>By {{ post.author }}</span>
+          </div>
+          <button class="blog-read-more">
+            <span>Read Full Article</span>
+            <mat-icon>arrow_forward</mat-icon>
+          </button>
+        </div>
+      </article>
+    </div>
+    
+    <div class="blog-cta">
+      <button class="btn-primary">
+        <mat-icon>library_books</mat-icon>
+        <span>View All Legal Insights</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="final-cta-section">
+  <div class="cta-background"></div>
+  <div class="container">
+    <div class="cta-content">
+      <div class="cta-icon">
+        <mat-icon>gavel</mat-icon>
+      </div>
+      <h2 class="cta-title">Your Journey to Justice Begins Here</h2>
+      <p class="cta-subtitle">
+        Don't let legal challenges overwhelm you. Our expert team is ready to guide you through 
+        every step of your legal journey with compassion, expertise, and unwavering dedication.
       </p>
       
-      <div class="cta-actions-3d">
-        <a routerLink="/contact" class="btn-3d-primary">
-          <div class="btn-3d-inner transform-style-preserve-3d">
-            <div class="btn-face btn-top"></div>
-            <div class="btn-face btn-front">
-              <mat-icon>phone</mat-icon>
-              <span>Get Your Free Consultation</span>
-            </div>
-            <div class="btn-face btn-right"></div>
-            <div class="btn-face btn-bottom"></div>
-          </div>
-        </a>
-        
-        <a routerLink="/services" class="btn-3d-secondary">
-          <div class="btn-3d-inner transform-style-preserve-3d">
-            <div class="btn-face btn-top"></div>
-            <div class="btn-face btn-front">
-              <mat-icon>explore</mat-icon>
-              <span>Explore Our Services</span>
-            </div>
-            <div class="btn-face btn-right"></div>
-            <div class="btn-face btn-bottom"></div>
-          </div>
-        </a>
+      <div class="cta-features">
+        <div class="feature-item">
+          <mat-icon>schedule</mat-icon>
+          <span>24/7 Legal Support</span>
+        </div>
+        <div class="feature-item">
+          <mat-icon>verified</mat-icon>
+          <span>100% Confidential</span>
+        </div>
+        <div class="feature-item">
+          <mat-icon>money_off</mat-icon>
+          <span>Free Initial Consultation</span>
+        </div>
+      </div>
+      
+      <div class="cta-actions">
+        <button class="btn-primary large" (click)="onContactUs()">
+          <mat-icon>phone</mat-icon>
+          <span>Start Your Free Consultation</span>
+        </button>
+        <button class="btn-secondary large" (click)="onViewServices()">
+          <mat-icon>info</mat-icon>
+          <span>Learn About Our Services</span>
+        </button>
+      </div>
+      
+      <div class="cta-contact-info">
+        <div class="contact-item">
+          <mat-icon>phone</mat-icon>
+          <span>+91 98765 43210</span>
+        </div>
+        <div class="contact-item">
+          <mat-icon>email</mat-icon>
+          <span>legal&#64;karzamaaf.com</span>
+        </div>
+        <div class="contact-item">
+          <mat-icon>location_on</mat-icon>
+          <span>Supreme Court Complex, New Delhi</span>
+        </div>
       </div>
     </div>
   </div>

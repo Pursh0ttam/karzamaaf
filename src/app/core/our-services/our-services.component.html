@@ -1,6 +1,22 @@
 <div class="services-dropdown">
-  <div *ngFor="let service of services" class="service-item px-4 py-2 border-b last:border-b-0">
-    <h4 class="font-semibold text-blue-700">{{ service.title }}</h4>
-    <!-- <p class="text-gray-600 text-sm">{{ service.description }}</p> -->
+  <div class="services-grid">
+    <a *ngFor="let service of services; let i = index" 
+       [routerLink]="service.route" 
+       class="service-item"
+       [style.animation-delay]="(i * 0.1) + 's'">
+      <div class="service-content">
+        <div class="service-icon">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <h4 class="service-title">{{ service.title }}</h4>
+        <div class="service-arrow">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </div>
+      </div>
+    </a>
   </div>
 </div>

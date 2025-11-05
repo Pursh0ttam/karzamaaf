@@ -104,6 +104,6 @@ export class PersonalLoanSettlementComponent implements OnInit {
   }
 
   callPhone(): void {
-    window.open('tel:+1234567890', '_self');
+    window.open('tel:+8102201484', '_self');
   }
 }

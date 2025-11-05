@@ -609,3 +609,132 @@
     gap: 16px;
   }
 }
+/* Fix dark sections to match light background */
+.py-32.bg-gradient-to-br.from-slate-900.via-gray-900.to-blue-900 {
+  background: #ffffff !important; /* White background like new section */
+}
+
+.py-32.bg-gradient-to-br h2,
+.py-32.bg-gradient-to-br .text-white {
+  color: #1f2937 !important; /* Dark text */
+}
+
+.py-32.bg-gradient-to-br p,
+.py-32.bg-gradient-to-br .text-gray-300 {
+  color: #6b7280 !important; /* Gray text */
+}
+/* Fix card text visibility */
+.blog-card-3d .blog-front {
+  background: #ffffff !important;
+  color: #1f2937 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.blog-card-3d .blog-front .blog-title,
+.blog-card-3d .blog-front h3 {
+  color: #1f2937 !important;
+}
+
+.blog-card-3d .blog-front .blog-description,
+.blog-card-3d .blog-front p {
+  color: #6b7280 !important;
+}
+
+.blog-card-3d .blog-front .blog-meta,
+.blog-card-3d .blog-front .blog-date,
+.blog-card-3d .blog-front .blog-read-time {
+  color: #9ca3af !important;
+}
+
+.blog-card-3d .blog-front .blog-btn-3d,
+.blog-card-3d .blog-front button {
+  color: #1976d2 !important;
+}
+/* Fix CTA section text visibility */
+.py-32.relative.overflow-hidden {
+  background: #ffffff !important; /* White background like other sections */
+}
+
+.py-32.relative.overflow-hidden h2,
+.py-32.relative.overflow-hidden .text-white,
+.py-32.relative.overflow-hidden .headline-text,
+.py-32.relative.overflow-hidden .cta-headline .headline-text {
+  color: #1f2937 !important; /* Dark text */
+}
+
+.py-32.relative.overflow-hidden p,
+.py-32.relative.overflow-hidden .text-gray-200 {
+  color: #6b7280 !important; /* Gray text */
+}
+
+.py-32.relative.overflow-hidden .trust-badges-3d span,
+.py-32.relative.overflow-hidden .badge-3d-item span {
+  color: #1f2937 !important; /* Dark text for badges */
+}
+/* Make read more button text black */
+.blog-card-3d .blog-front .blog-btn-3d,
+.blog-card-3d .blog-front .blog-btn-3d .btn-text,
+.blog-card-3d .blog-front button {
+  color: #000000 !important;
+}
+/* Fix CTA section - white background like other sections */
+.py-32.relative.overflow-hidden {
+  background: #ffffff !important; /* White background */
+}
+
+.py-32.relative.overflow-hidden h2,
+.py-32.relative.overflow-hidden .text-white,
+.py-32.relative.overflow-hidden .headline-text,
+.py-32.relative.overflow-hidden .cta-headline .headline-text {
+  color: #1f2937 !important; /* Dark text */
+}
+
+.py-32.relative.overflow-hidden p,
+.py-32.relative.overflow-hidden .text-gray-200 {
+  color: #6b7280 !important; /* Gray text */
+}
+
+.py-32.relative.overflow-hidden .trust-badges-3d span,
+.py-32.relative.overflow-hidden .badge-3d-item span {
+  color: #1f2937 !important; /* Dark text */
+}
+
+/* Fix buttons for white background */
+.nbfc-primary-btn-3d .nbfc-primary-front {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important; /* Blue button */
+  color: #ffffff !important; /* White text */
+}
+
+.nbfc-secondary-btn-3d .nbfc-secondary-front {
+  background: #f3f4f6 !important; /* Light gray button */
+  color: #1f2937 !important; /* Dark text */
+  border: 2px solid #e5e7eb !important; /* Light border */
+}
+/* Change NBFC COMPLIANCE ISSUES section background */
+section.py-32.relative.overflow-hidden {
+  background: #f8fafc !important;
+  background-color: #f8fafc !important;
+  background-image: none !important;
+  box-shadow: 
+    inset 0 1px 0 0 rgba(0, 0, 0, 0.05),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.05) !important;
+  border: none !important;
+}
+
+section.py-32.relative.overflow-hidden::before,
+section.py-32.relative.overflow-hidden::after {
+  display: none !important;
+}
+
+section.py-32.relative.overflow-hidden > div.absolute.inset-0 {
+  display: none !important;
+}
+
+section.py-32.relative.overflow-hidden h2,
+section.py-32.relative.overflow-hidden .headline-text {
+  color: #1f2937 !important;
+}
+
+section.py-32.relative.overflow-hidden p {
+  color: #6b7280 !important;
+}

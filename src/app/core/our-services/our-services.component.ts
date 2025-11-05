@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-our-services',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './our-services.component.html',
   styleUrls: ['./our-services.component.css']
 })
@@ -12,27 +13,27 @@ export class OurServicesComponent {
   services = [
     {
       title: 'Personal Loan Settlement',
-    //   description: 'Resolve outstanding personal loans with expert negotiation and support.'
+      route: '/personal-loan-settlement'
     },
     {
       title: "NBFC's",
-    //   description: 'Specialized solutions for loans and disputes with Non-Banking Financial Companies.'
+      route: '/nbfc-services'
     },
     {
       title: 'Litigation',
-    //   description: 'Legal representation and advice for loan-related court cases and disputes.'
+      route: '/litigation'
     },
     {
       title: 'Credit Card Loan Settlement',
-    //   description: 'Help with settling credit card dues and reducing financial burden.'
+      route: '/credit-card-loan-settlement'
     },
     {
       title: 'Anti-Harassment Services',
-    //   description: 'Protection from unlawful recovery practices and harassment by lenders.'
+      route: '/anti-harassment-services'
     },
     {
       title: 'CIBIL Improvement Services',
-    //   description: 'Boost your credit score and financial credibility with expert guidance.'
+      route: '/cibil-improvement-services'
     }
   ];
 }

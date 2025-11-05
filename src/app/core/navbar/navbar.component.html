@@ -1,14 +1,32 @@
-<nav class="mat-elevation-z4">
-  <div class="navbar-container">
-    <a routerLink="/" class="logo">KarzaMaaf</a>
-    <ul class="nav-links">
-      <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/services">Services</a></li>
-      <li><a routerLink="/about">About Us</a></li>
-      <li><a routerLink="/faq">FAQ</a></li>
-      <li><a routerLink="/blog">Blog</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-    </ul>
-    <button mat-raised-button color="primary" (click)="openCallbackModal()">Request Callback</button>
+<nav style="background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 70px;">
+    
+    <!-- Logo -->
+    <a routerLink="/" style="text-decoration: none; font-size: 24px; font-weight: bold; color: #1976d2;">
+      KarzaMaaf
+    </a>
+
+    <!-- Navigation -->
+    <div style="display: flex; align-items: center; gap: 30px;">
+      <a routerLink="/" style="text-decoration: none; color: #333; font-weight: 500;">Home</a>
+      
+      <div style="position: relative;" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+        <a href="#" style="text-decoration: none; color: #333; font-weight: 500;">Services ▼</a>
+        <div *ngIf="showDropdown" style="position: absolute; top: 100%; left: 0; background: white; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); min-width: 200px; z-index: 1000;">
+          <a routerLink="/personal-loan-settlement" style="display: block; padding: 10px 15px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">Personal Loan Settlement</a>
+          <a routerLink="/credit-card-settlement" style="display: block; padding: 10px 15px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">Credit Card Settlement</a>
+          <a routerLink="/business-loan-settlement" style="display: block; padding: 10px 15px; text-decoration: none; color: #333; border-bottom: 1px solid #eee;">Business Loan Settlement</a>
+          <a routerLink="/legal-consultation" style="display: block; padding: 10px 15px; text-decoration: none; color: #333;">Legal Consultation</a>
+        </div>
+      </div>
+      
+      <a routerLink="/about" style="text-decoration: none; color: #333; font-weight: 500;">About</a>
+      <a routerLink="/contact" style="text-decoration: none; color: #333; font-weight: 500;">Contact</a>
+    </div>
+
+    <!-- CTA Button -->
+    <button (click)="openCallbackModal()" style="padding: 10px 20px; background: #1976d2; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 500;">
+      Free Consultation
+    </button>
   </div>
 </nav>
